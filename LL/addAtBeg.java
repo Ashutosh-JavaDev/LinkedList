@@ -28,5 +28,14 @@ public class addAtBeg {
         c.next = d;
         d.next = e;
 
+        Node value=a.insertBeg(a);
+
+        Node current=a;
+        while(current!=null){
+            System.out.print(current.data+" ");
+            current=current.next;
+        }
+        System.out.println();
+
     }
 }

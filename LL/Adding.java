@@ -11,7 +11,7 @@ class Node {
     }
 }
 
-public class insert {
+public class Adding {
     public static void main(String[] args) {
         Node a=new Node(12);
         Node b=new Node(13);

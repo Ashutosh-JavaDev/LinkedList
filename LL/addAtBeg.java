@@ -7,6 +7,13 @@ class Node {
     Node(int data) {
         this.data = data;
     }
+
+    public Node insertBeg(Node head) {
+        Node newNode = new Node(10);
+        newNode.next = head;
+        return newNode;
+
+    }
 }
 
 public class addAtBeg {
@@ -16,6 +23,10 @@ public class addAtBeg {
         Node c = new Node(3);
         Node d = new Node(4);
         Node e = new Node(5);
+        a.next = b;
+        b.next = c;
+        c.next = d;
+        d.next = e;
 
     }
 }

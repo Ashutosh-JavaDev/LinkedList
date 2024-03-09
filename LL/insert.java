@@ -1,4 +1,4 @@
-package ArrayList_Program;
+
 import java.util.Scanner;
 
 class Node {

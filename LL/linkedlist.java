@@ -24,7 +24,6 @@ public class linkedlist {
                 head = newN;
             }
         }
-
         void display() {
             listing temp = head;
             while (temp != null) {
@@ -85,4 +84,7 @@ public class linkedlist {
         ll.display();
         System.out.println(ll.tail.data);
     }
+
+    
+    
 }

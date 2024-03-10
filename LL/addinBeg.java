@@ -8,7 +8,7 @@ class Node {
         this.data = data;
     }
 
-    public static Node insertBeg(Node head) {
+    public static Node insertInBeg(Node head) {
         Node newNode = new Node(10);
         newNode.next = head;
         return newNode;
@@ -16,7 +16,7 @@ class Node {
     }
 }
 
-public class addAtBeg {
+public class addinBeg {
     public static void main(String[] args) {
         Node a = new Node(1);
         Node b = new Node(2);
@@ -28,7 +28,7 @@ public class addAtBeg {
         c.next = d;
         d.next = e;
 
-        Node value=Node.insertBeg(a);
+        Node value=Node.insertInBeg(a);
 
         Node current=value;
         while(current!=null){

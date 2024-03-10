@@ -1,11 +1,11 @@
 
 import java.util.Scanner;
 
-class Node {
+class Nodes {
     int Data;
-    Node next;
+    Nodes next;
 
-    Node(int Data) {
+    Nodes(int Data) {
         this.Data = Data;
         this.next = null;
     }
@@ -13,17 +13,17 @@ class Node {
 
 public class Adding {
     public static void main(String[] args) {
-        Node a=new Node(12);
-        Node b=new Node(13);
-        Node c=new Node(14);
-        Node d=new Node(15);
-        Node e=new Node(17);
+        Nodes a=new Nodes(12);
+        Nodes b=new Nodes(13);
+        Nodes c=new Nodes(14);
+        Nodes d=new Nodes(15);
+        Nodes e=new Nodes(17);
         a.next=b;
         b.next=c;
         c.next=d;
         d.next=e;
         
-        Node current=a;
+        Nodes current=a;
         while(current!=null){
             System.out.print(current.Data+" ");
             current=current.next;

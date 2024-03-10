@@ -33,6 +33,10 @@ public class linkedlist {
             }
             System.out.println();
         }
+        void insertAtEnd(int data){
+            listing newN=new listing(data);
+            
+        }
 
     }
 

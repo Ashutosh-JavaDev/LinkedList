@@ -39,16 +39,8 @@ public class linkedlist {
             if (head == null) {
                 head = tail = newN;
             } else {
-                listing temp = head;
-                if (temp != null) {
-                    temp = temp.next;
-                    if (temp == null) {
-                        newN.next = tail;
-                    }
-                    else{
-                        temp=temp.next;
-                    }
-                }
+                tail.next=newN;
+                tail = newN;
             }
         }
 
@@ -59,6 +51,7 @@ public class linkedlist {
         ll.InsertatBeg(1);
         ll.InsertatBeg(12);
         ll.InsertatBeg(15);
+        ll.insertAtEnd(100);
         ll.display();
     }
 }

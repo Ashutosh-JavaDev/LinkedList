@@ -39,13 +39,23 @@ public class linkedlist {
             if (head == null) {
                 head = tail = newN;
             } else {
-                tail.next=newN;
+                tail.next = newN;
                 tail = newN;
             }
         }
-        void insertAt(int index,int data){
-            listing newN=new listing(data);
-            
+
+        void insertAt(int index, int data) {
+            listing newN = new listing(data);
+            // if(head==null){
+            // insertAtEnd(data);
+            // }
+
+            listing temp = head;
+            for (int i = 0; i < index; i++) {
+                temp = temp.next;
+            }
+            newN.next=temp.next;
+            temp.next=newN;
         }
 
     }

@@ -65,6 +65,7 @@ public class linkedlist {
         ll.InsertatBeg(1);
         ll.InsertatBeg(12);
         ll.InsertatBeg(15);
+        ll.insertAt(2, 234);
         ll.insertAtEnd(100);
         ll.display();
     }

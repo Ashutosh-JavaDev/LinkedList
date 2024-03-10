@@ -43,6 +43,10 @@ public class linkedlist {
                 tail = newN;
             }
         }
+        void insertAt(int index,int data){
+            listing newN=new listing(data);
+            
+        }
 
     }
 

@@ -33,9 +33,23 @@ public class linkedlist {
             }
             System.out.println();
         }
-        void insertAtEnd(int data){
-            listing newN=new listing(data);
-            
+
+        void insertAtEnd(int data) {
+            listing newN = new listing(data);
+            if (head == null) {
+                head = tail = newN;
+            } else {
+                listing temp = head;
+                if (temp != null) {
+                    temp = temp.next;
+                    if (temp == null) {
+                        newN.next = tail;
+                    }
+                    else{
+                        temp=temp.next;
+                    }
+                }
+            }
         }
 
     }

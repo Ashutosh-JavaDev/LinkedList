@@ -46,16 +46,30 @@ public class linkedlist {
 
         void insertAt(int index, int data) {
             listing newN = new listing(data);
+            
             // if(head==null){
             // insertAtEnd(data);
             // }
 
             listing temp = head;
-            for (int i = 0; i < index; i++) {
+            if(index==size()){
+                insertAtEnd(data);
+                return;
+            }
+            for (int i = 0; i < index-1; i++) {
                 temp = temp.next;
             }
             newN.next=temp.next;
             temp.next=newN;
+        }
+        int size(){
+            listing temp=head;
+            int count=0;
+            while(temp!=null){
+                count++;
+                temp=temp.next;
+            }
+            return count;
         }
 
     }
@@ -65,8 +79,10 @@ public class linkedlist {
         ll.InsertatBeg(1);
         ll.InsertatBeg(12);
         ll.InsertatBeg(15);
-        ll.insertAt(2, 234);
         ll.insertAtEnd(100);
+        ll.insertAt(4, 234);
+
         ll.display();
+        System.out.println(ll.tail.data);
     }
 }

@@ -87,7 +87,7 @@ public class linkedlist {
         ll.InsertatBeg(15);
         ll.insertAtEnd(100);
         ll.insertAt(4, 234);
-
+        ll.deleteNode(3);
         ll.display();
         System.out.println(ll.tail.data);
     }

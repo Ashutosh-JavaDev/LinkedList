@@ -28,5 +28,9 @@ public class SinglyLinkedList {
     }
     public static void main(String[] args) {
          meathod ob=new meathod();
+         ob.create(1);
+         ob.create(2);
+         ob.create(3);
+         ob.display();
     }
 }

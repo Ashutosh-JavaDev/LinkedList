@@ -118,9 +118,6 @@ public class SinglyLinkedList {
                 temp = temp.next;
                 index++;
             }
-            if(index==0){
-                System.out.println("Number not found");
-            }
             return-1;
         }
     }
@@ -150,7 +147,7 @@ public class SinglyLinkedList {
         // System.out.println("Updated Linked List");
         ob.display();
        int output= ob.search(sc.nextInt());
-       System.out.println("Element ffound at: "+output);
+       System.out.println("Element found at: "+output);
         System.out.println(ob.tail.data);
     }
 }

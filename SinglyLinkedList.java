@@ -71,6 +71,8 @@ public class SinglyLinkedList {
         meathod ob = new meathod();
         ob.create();
         System.out.println("Linked List :");
+        ob.display();
+        System.out.println("Linked List In Reverse Order: ");
         ob.displayInrev(ob.head);
     }
 }

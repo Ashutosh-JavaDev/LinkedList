@@ -62,7 +62,7 @@ public class SinglyLinkedList {
                 displayInrev(head.next);
                 System.out.print(head.data + " ");
             }
-            System.out.println();
+            // System.out.println();
         }
 
         int size() {
@@ -70,9 +70,29 @@ public class SinglyLinkedList {
             int count = 0;
             while (current != null) {
                 count++;
-                current=current.next;
+                current = current.next;
             }
             return count;
+        }
+
+        void insertAtBeggining(int val) {
+            singly newN = new singly(val);
+            if (head == null) {
+                head = tail = newN;
+            } else {
+                newN.next = head;
+                head = newN;
+            }
+        }
+
+        void insertAtEnd(int data) {
+            singly newN = new singly(data);
+            if (head == null) {
+                head = tail = newN;
+            } else {
+                tail.next = newN;
+                tail = newN;
+            }
         }
     }
 
@@ -84,6 +104,11 @@ public class SinglyLinkedList {
         ob.display();
         System.out.println("Linked List In Reverse Order: ");
         ob.displayInrev(ob.head);
-        System.out.println("Size of Node: "+ob.size());
+        System.out.println();
+        System.out.println("Size of Node: " + ob.size());
+        System.out.print("Enter the Number want to add at Beggining: ");
+        ob.insertAtBeggining(sc.nextInt());
+        System.out.println("Linked list After Update: ");
+        ob.display();
     }
 }

@@ -94,17 +94,34 @@ public class SinglyLinkedList {
                 tail = newN;
             }
         }
-        void insertAtRef(int index,int data){
-            if(index==size()){
+
+        void insertAtRef(int index, int data) {
+            if (index == size()) {
                 insertAtEnd(data);
             }
-            singly newN=new singly(data);
-            singly temp=head;
-            for(int i=0;i<=index;i++){
-                temp=temp.next;
+            singly newN = new singly(data);
+            singly temp = head;
+            for (int i = 0; i <= index; i++) {
+                temp = temp.next;
             }
-            newN.next=temp.next;
-            temp.next=newN;
+            newN.next = temp.next;
+            temp.next = newN;
+        }
+
+        int search(int data) {
+            singly temp = head;
+            int index = 0;
+            while (temp != null) {
+                if (temp.data == data) {
+                    return index;
+                }
+                temp = temp.next;
+                index++;
+            }
+            if(index==0){
+                System.out.println("Number not found");
+            }
+            return-1;
         }
     }
 
@@ -112,26 +129,28 @@ public class SinglyLinkedList {
         Scanner sc = new Scanner(System.in);
         meathod ob = new meathod();
         ob.create();
-        System.out.println("Linked List :");
+        // System.out.println("Linked List :");
+        // ob.display();
+        // System.out.println("Linked List In Reverse Order: ");
+        // ob.displayInrev(ob.head);
+        // System.out.println();
+        // System.out.println("Size of Node: " + ob.size());
+        // System.out.print("Enter the Number want to add at Beggining: ");
+        // ob.insertAtBeggining(sc.nextInt());
+        // System.out.println("Linked list After Update: ");
+        // ob.display();
+        // System.out.print("Enter the Number want to add at End : ");
+        // ob.insertAtEnd(sc.nextInt());
+        // System.out.println("Linked list After Update: ");
+        // ob.display();
+        // System.out.print("Enter the Index where you want to add number: ");
+        // int index=sc.nextInt();
+        // System.out.println("Enter the Number: ");
+        // ob.insertAtRef(index, sc.nextInt());
+        // System.out.println("Updated Linked List");
         ob.display();
-        System.out.println("Linked List In Reverse Order: ");
-        ob.displayInrev(ob.head);
-        System.out.println();
-        System.out.println("Size of Node: " + ob.size());
-        System.out.print("Enter the Number want to add at Beggining: ");
-        ob.insertAtBeggining(sc.nextInt());
-        System.out.println("Linked list After Update: ");
-        ob.display();
-        System.out.print("Enter the Number want to add at End : ");
-        ob.insertAtEnd(sc.nextInt());
-        System.out.println("Linked list After Update: ");
-        ob.display();
-        System.out.print("Enter the Index where you want to add number: ");
-        int index=sc.nextInt();
-        System.out.println("Enter the Number: ");
-        ob.insertAtRef(index, sc.nextInt());
-        System.out.println("Updated Linked List");
-        ob.display();
+       int output= ob.search(sc.nextInt());
+       System.out.println("Element ffound at: "+output);
         System.out.println(ob.tail.data);
     }
 }

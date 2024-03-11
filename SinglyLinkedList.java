@@ -114,5 +114,6 @@ public class SinglyLinkedList {
         ob.insertAtEnd(sc.nextInt());
         System.out.println("Linked list After Update: ");
         ob.display();
+        System.out.println(ob.tail.data);
     }
 }

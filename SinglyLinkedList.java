@@ -94,6 +94,18 @@ public class SinglyLinkedList {
                 tail = newN;
             }
         }
+        void insertAtRef(int index,int data){
+            if(index==size()){
+                insertAtEnd(data);
+            }
+            singly newN=new singly(data);
+            singly temp=head;
+            for(int i=0;i<=index;i++){
+                temp=temp.next;
+            }
+            newN.next=temp.next;
+            temp.next=newN;
+        }
     }
 
     public static void main(String[] args) {
@@ -113,6 +125,12 @@ public class SinglyLinkedList {
         System.out.print("Enter the Number want to add at End : ");
         ob.insertAtEnd(sc.nextInt());
         System.out.println("Linked list After Update: ");
+        ob.display();
+        System.out.print("Enter the Index where you want to add number: ");
+        int index=sc.nextInt();
+        System.out.println("Enter the Number: ");
+        ob.insertAtRef(index, sc.nextInt());
+        System.out.println("Updated Linked List");
         ob.display();
         System.out.println(ob.tail.data);
     }

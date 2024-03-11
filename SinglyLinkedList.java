@@ -18,27 +18,28 @@ public class SinglyLinkedList {
         Scanner sc = new Scanner(System.in);
 
         void create() {
+            System.out.println("Press 'Stop' for stop adding the Number in list");
+
             String str;
             while (true) {
-                System.out.println("Press 'Stop' for stop adding the Number in list");
                 str = sc.nextLine();
                 if (str.equalsIgnoreCase("stop")) {
                     break;
                 } else {
                     try {
-                        int data = Integer.parseInt(str);
+                        int data = Integer.parseInt(str);// this helps to convert the String into integer;
                         singly newN = new singly(data);
                         if (head == null) {
                             head = tail = newN;
                         }
 
                         else {
-                            tail.next=newN;
-                            tail=newN;
+                            tail.next = newN;
+                            tail = newN;
                         }
 
                     } catch (NumberFormatException e) {
-                        System.out.println("Invalid Number, or prress Stop to stop  adding number");
+                        System.out.println("Invalid Number, or press Stop to stop  adding number");
                     }
                 }
 
@@ -53,6 +54,16 @@ public class SinglyLinkedList {
             }
             System.out.println();
         }
+
+        void displayInrev(singly head) {
+            if (head == null) {
+                return;
+            } else {
+                displayInrev(head.next);
+                System.out.print(head.data + " ");
+            }
+            System.out.println();
+        }
     }
 
     public static void main(String[] args) {
@@ -60,6 +71,6 @@ public class SinglyLinkedList {
         meathod ob = new meathod();
         ob.create();
         System.out.println("Linked List :");
-        ob.display();
+        ob.displayInrev(ob.head);
     }
 }

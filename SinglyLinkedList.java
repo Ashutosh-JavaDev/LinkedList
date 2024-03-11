@@ -58,7 +58,8 @@ public class SinglyLinkedList {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         meathod ob = new meathod();
-
+        ob.create();
+        System.out.println("Linked List :");
         ob.display();
     }
 }

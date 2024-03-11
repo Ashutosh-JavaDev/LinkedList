@@ -64,6 +64,16 @@ public class SinglyLinkedList {
             }
             System.out.println();
         }
+
+        int size() {
+            singly current = head;
+            int count = 0;
+            while (current != null) {
+                count++;
+                current=current.next;
+            }
+            return count;
+        }
     }
 
     public static void main(String[] args) {
@@ -74,5 +84,6 @@ public class SinglyLinkedList {
         ob.display();
         System.out.println("Linked List In Reverse Order: ");
         ob.displayInrev(ob.head);
+        System.out.println("Size of Node: "+ob.size());
     }
 }

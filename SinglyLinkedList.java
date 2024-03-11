@@ -33,7 +33,8 @@ public class SinglyLinkedList {
                         }
 
                         else {
-
+                            tail.next=newN;
+                            tail=newN;
                         }
 
                     } catch (NumberFormatException e) {

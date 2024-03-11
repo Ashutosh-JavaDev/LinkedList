@@ -17,13 +17,30 @@ public class SinglyLinkedList {
         singly tail = null;
         Scanner sc = new Scanner(System.in);
 
-        void create(int data) {
-            singly newN = new singly(data);
-            if (head == null) {
-                head = tail = newN;
-            } else {
-                tail.next = newN;
-                tail = newN;
+        void create() {
+            String str;
+            while (true) {
+                System.out.println("Press 'Stop' for stop adding the Number in list");
+                str = sc.nextLine();
+                if (str.equalsIgnoreCase("stop")) {
+                    break;
+                } else {
+                    try {
+                        int data = Integer.parseInt(str);
+                        singly newN = new singly(data);
+                        if (head == null) {
+                            head = tail = newN;
+                        }
+
+                        else {
+
+                        }
+
+                    } catch (NumberFormatException e) {
+                        System.out.println("Invalid Number, or prress Stop to stop  adding number");
+                    }
+                }
+
             }
         }
 
@@ -38,10 +55,9 @@ public class SinglyLinkedList {
     }
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         meathod ob = new meathod();
-        ob.create(1);
-        ob.create(2);
-        ob.create(3);
+
         ob.display();
     }
 }

@@ -70,6 +70,13 @@ public class linkedlist {
             }
             return count;
         }
+        void deleteNode(int index){
+            listing temp=head;
+            for(int i=0;i<index;i++){
+                temp=temp.next;
+            }
+            temp=tail=null;
+        }
 
     }
 

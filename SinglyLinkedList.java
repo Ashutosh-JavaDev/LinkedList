@@ -110,5 +110,9 @@ public class SinglyLinkedList {
         ob.insertAtBeggining(sc.nextInt());
         System.out.println("Linked list After Update: ");
         ob.display();
+        System.out.print("Enter the Number want to add at End : ");
+        ob.insertAtEnd(sc.nextInt());
+        System.out.println("Linked list After Update: ");
+        ob.display();
     }
 }

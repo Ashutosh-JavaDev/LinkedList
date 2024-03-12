@@ -124,11 +124,11 @@ public class SinglyLinkedList {
             singly temp=head;
 
             if(index==0){
-                head=temp;
+                temp=temp.next;
                 return;
             }
             for(int i=0;i<index-1;i++){
-                temp=temp.next;
+                head=temp.next;
             }
             temp.next=temp.next.next;
             if(index==size()){

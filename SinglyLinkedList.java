@@ -138,6 +138,14 @@ public class SinglyLinkedList {
                 tail=temp;
             }
         }
+        void deleteFromBeg(){
+            if(head==null){
+                head=tail=null;
+            }
+            else{
+                head=head.next;
+            }
+        }
     }
 
     public static void main(String[] args) {
@@ -167,6 +175,8 @@ public class SinglyLinkedList {
         System.out.print("Node want to delete: ");
         ob.deletefromanyIndex(sc.nextInt());
     //    int output= ob.search(sc.nextInt());
+    ob.display();
+    ob.deleteFromBeg();
        ob.display();
     //    System.out.println("Element found at: "+output);
         System.out.println(ob.tail.data);

@@ -121,11 +121,12 @@ public class SinglyLinkedList {
             return-1;
         }
         void delete(int index){
-            if(size()<0){
-                System.out.println("Please add Value in the List.");
+            singly temp=head;
+
+            if(index==0){
+                head=temp;
                 return;
             }
-            singly temp=head;
             for(int i=0;i<index-1;i++){
                 temp=temp.next;
             }

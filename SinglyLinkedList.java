@@ -130,7 +130,9 @@ public class SinglyLinkedList {
                 temp=temp.next;
             }
             temp.next=temp.next.next;
-
+            // if(index==size()){
+            //     tail=temp;
+            // }
         }
     }
 

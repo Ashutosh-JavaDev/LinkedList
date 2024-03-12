@@ -123,12 +123,15 @@ public class SinglyLinkedList {
         void delete(int index){
             singly temp=head;
 
-            if(index==0){
-                temp=temp.next;
+            if (index == 0) {
+                head = head.next;
+                if (head == null) {  // If the list had only one element
+                    tail = null;
+                }
                 return;
             }
             for(int i=0;i<index-1;i++){
-                head=temp.next;
+                temp=temp.next;
             }
             temp.next=temp.next.next;
             if(index==size()){

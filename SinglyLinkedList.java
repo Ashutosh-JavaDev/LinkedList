@@ -126,7 +126,7 @@ public class SinglyLinkedList {
                 return;
             }
             singly temp=head;
-            for(int i=0;i<index;i++){
+            for(int i=0;i<index-1;i++){
                 temp=temp.next;
             }
             temp.next=temp.next.next;

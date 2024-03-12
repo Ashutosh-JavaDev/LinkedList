@@ -158,7 +158,10 @@ public class SinglyLinkedList {
         // ob.insertAtRef(index, sc.nextInt());
         // System.out.println("Updated Linked List");
         ob.display();
+        System.out.print("Node want to delete: ");
+        ob.delete(sc.nextInt());
        int output= ob.search(sc.nextInt());
+       ob.display();
        System.out.println("Element found at: "+output);
         System.out.println(ob.tail.data);
     }

@@ -120,7 +120,7 @@ public class SinglyLinkedList {
             }
             return-1;
         }
-        void delete(int index){
+        void deletefromanyIndex(int index){
             singly temp=head;
 
             if (index == 0) {
@@ -165,7 +165,7 @@ public class SinglyLinkedList {
         // System.out.println("Updated Linked List");
         ob.display();
         System.out.print("Node want to delete: ");
-        ob.delete(sc.nextInt());
+        ob.deletefromanyIndex(sc.nextInt());
     //    int output= ob.search(sc.nextInt());
        ob.display();
     //    System.out.println("Element found at: "+output);

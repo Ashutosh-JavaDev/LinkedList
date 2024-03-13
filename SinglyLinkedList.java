@@ -146,6 +146,14 @@ public class SinglyLinkedList {
                 head=head.next;
             }
         }
+        void deleteFromEnd(){
+            if(head==null){
+                head=tail=null;
+            }
+            else{
+                
+            }
+        }
     }
 
     public static void main(String[] args) {

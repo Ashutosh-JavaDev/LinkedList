@@ -151,6 +151,12 @@ public class SinglyLinkedList {
                 head=tail=null;
             }
             else{
+                singly temp=head;
+                while(temp.next!=tail){
+                    temp=temp.next;
+                }
+                temp.next=null;
+                tail=temp;
                 
             }
         }
@@ -185,6 +191,8 @@ public class SinglyLinkedList {
     //    int output= ob.search(sc.nextInt());
     ob.display();
     ob.deleteFromBeg();
+       ob.display();
+       ob.deleteFromEnd();
        ob.display();
     //    System.out.println("Element found at: "+output);
         System.out.println(ob.tail.data);

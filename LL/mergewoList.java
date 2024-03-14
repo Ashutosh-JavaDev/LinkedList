@@ -40,6 +40,12 @@ public class mergewoList {
                 }
             }
         }
+        void check(){
+            Nodes temp=head;
+            while(temp.data>temp.next.data){
+                
+            }
+        }
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);

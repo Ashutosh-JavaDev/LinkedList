@@ -5,7 +5,33 @@ class Nodes{
     Nodes(int data){
         this.data=data;
     }
-    
+   public static class Linked{
+    Nodes head=null;
+    Nodes tail=null;
+    void insert(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Print Stop to stop inserting Value");
+        String val;
+        while(true){
+            val=sc.nextLine();
+            if(val.equalsIgnoreCase("Stop")){
+                break;
+            }
+            else{
+                try{
+                    int data=Integer.parseInt(val);
+                    Nodes newN=new Nodes(data);
+                    if(head==null){
+
+                    }
+                }
+                catch(NumberFormatException e){
+
+                }
+            }
+        }
+    }
+   }
 }
 public class mergewoList {
     

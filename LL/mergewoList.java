@@ -62,5 +62,6 @@ public class mergewoList {
         Scanner sc = new Scanner(System.in);
         Linked ob = new Linked();
         ob.insert();
+        ob.check();
     }
 }

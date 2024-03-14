@@ -29,7 +29,7 @@ public class mergewoList {
                         if (head == null) {
                             head = tail = newN;
                         } else {
-                           
+
                             tail.next = newN;
                             tail = newN;
                         }
@@ -40,17 +40,20 @@ public class mergewoList {
                 }
             }
         }
-        void check(){
-            Nodes temp=head;
-            while(temp.data<temp.next.data){
-                Nodes orary=temp.next;
-                orary=temp;
+
+        void check() {
+            Nodes temp = head;
+            while (temp.data < temp.next.data) {
+                Nodes orary = temp.next;
+                temp.next = orary;
+                orary = temp;
             }
         }
     }
+
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        Linked ob=new Linked();
+        Scanner sc = new Scanner(System.in);
+        Linked ob = new Linked();
         ob.insert();
     }
 }

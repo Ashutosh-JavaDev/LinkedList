@@ -1,11 +1,13 @@
 import java.util.Scanner;
 
-class Nodes {
-    int data;
-    Nodes next;
+public class mergewoList {
+    public static class Nodes {
+        int data;
+        Nodes next;
 
-    Nodes(int data) {
-        this.data = data;
+        Nodes(int data) {
+            this.data = data;
+        }
     }
 
     public static class Linked {
@@ -42,8 +44,4 @@ class Nodes {
             }
         }
     }
-}
-
-public class mergewoList {
-
 }

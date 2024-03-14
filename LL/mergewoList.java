@@ -25,11 +25,17 @@ class Nodes{
                         head=tail=newN;
                     }
                     else{
-                        
+                       Nodes temp=head;
+                       while(tail!=null){
+                        temp=temp.next;
+                       } 
+                       tail.next=newN;
+                       tail=newN;
                     }
                 }
                 catch(NumberFormatException e){
-
+                    System.out.println("Invalid\nWrite Stop or Enter");
+                    val=sc.nextLine();
                 }
             }
         }

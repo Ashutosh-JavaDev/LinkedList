@@ -29,10 +29,7 @@ public class mergewoList {
                         if (head == null) {
                             head = tail = newN;
                         } else {
-                            Nodes temp = head;
-                            while (tail != null) {
-                                temp = temp.next;
-                            }
+                           
                             tail.next = newN;
                             tail = newN;
                         }

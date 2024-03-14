@@ -42,8 +42,9 @@ public class mergewoList {
         }
         void check(){
             Nodes temp=head;
-            while(temp.data>temp.next.data){
-                
+            while(temp.data<temp.next.data){
+                Nodes orary=temp.next;
+                orary=temp;
             }
         }
     }

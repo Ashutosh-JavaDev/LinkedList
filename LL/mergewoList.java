@@ -22,7 +22,10 @@ class Nodes{
                     int data=Integer.parseInt(val);
                     Nodes newN=new Nodes(data);
                     if(head==null){
-
+                        head=tail=newN;
+                    }
+                    else{
+                        
                     }
                 }
                 catch(NumberFormatException e){

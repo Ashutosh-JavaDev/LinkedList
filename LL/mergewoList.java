@@ -45,9 +45,9 @@ public class mergewoList {
             Nodes temp = head;
             while (temp!=null) {
                 if(temp.data < temp.next.data){
-                    Nodes orary = temp.next;
+                    Nodes orary = temp;
+                    temp = temp.next;
                     temp.next = orary;
-                    orary = temp;
                 }
                
             }

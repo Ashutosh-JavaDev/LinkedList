@@ -40,30 +40,35 @@ public class mergewoList {
                 }
             }
         }
-        void disp(){
-            Nodes current=head;
-            while(current!=null){
-                System.out.print(current.data+" ");
-                current=current.next;
+
+        void disp() {
+            Nodes current = head;
+            while (current != null) {
+                System.out.print(current.data + " ");
+                current = current.next;
             }
             System.out.println();
         }
 
         void check() {
-            Nodes temp = head;
-            while (temp!=null) {
-                if(temp.data < temp.next.data){
-                    Nodes orary = temp;
-                    temp = temp.next;
-                    temp.next = orary;
+            for (;;) {
+                Nodes temp = head;
+                Nodes prev = null;
+                while (temp != null && temp.next != null) {
+                    if (temp.data < temp.next.data) {
+                        Nodes orary = temp;
+                        temp = temp.next;
+                        temp.next = orary;
+                    }
+
                 }
-               
+                while (temp != null) {
+                    System.out.print(temp.data + " ");
+                }
+                System.out.println();
             }
-            while(temp!=null){
-                System.out.print(temp.data+" ");
-            }
-            System.out.println();
         }
+
     }
 
     public static void main(String[] args) {

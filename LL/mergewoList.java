@@ -40,6 +40,14 @@ public class mergewoList {
                 }
             }
         }
+        void disp(){
+            Nodes current=head;
+            while(current!=null){
+                System.out.print(current.data+" ");
+                current=current.next;
+            }
+            System.out.println();
+        }
 
         void check() {
             Nodes temp = head;

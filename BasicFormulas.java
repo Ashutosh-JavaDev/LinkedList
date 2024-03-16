@@ -63,8 +63,11 @@ public class BasicFormulas {
         }
     }
     public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
             listing o=new listing();
             o.create();
+            System.out.println("Insert the value  in Start");
+            o.InsertatBeggining(sc.nextInt());
             o.disp();
     }
 }

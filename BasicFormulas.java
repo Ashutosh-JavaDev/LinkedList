@@ -43,5 +43,11 @@ public class BasicFormulas {
                 }
             }
         }
+        void disp(){
+            noding current=head;
+            while(current!=null){
+                current=current.next;
+            }
+        }
     }
 }

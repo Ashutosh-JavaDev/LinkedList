@@ -49,6 +49,15 @@ public class BasicFormulas {
             }
             System.out.println();
         }
+        void counnt() {
+            noding current = head;
+            int c=0;
+            while (current != null) {
+                c++;
+                current = current.next;
+            }
+            System.out.println();
+        }
 
         void InsertatBeggining(int data) {
             noding newN = new noding(data);
@@ -102,6 +111,7 @@ public class BasicFormulas {
                     temp = temp.next;
                 }
                 temp.next=temp.next.next;
+                tail=temp;
             }
         }
         void deleteAnyIndex(int index){
@@ -111,8 +121,9 @@ public class BasicFormulas {
             }
             else{
                 for(int i=0;i<=index-1;i++){
-                    
+                    temp=temp.next;
                 }
+                temp.next=temp.next.next;
             }
         }
     }
@@ -131,6 +142,7 @@ public class BasicFormulas {
         // int da=sc.nextInt();
         // o.InsertatMid(val, da);
         o.deleteatBeggining();
+        o.deleteAnyIndex(sc.nextInt());
         o.deleteAtend();
         o.disp();
     }

@@ -46,8 +46,10 @@ public class BasicFormulas {
         void disp(){
             noding current=head;
             while(current!=null){
+                System.out.print(current.data+" ");
                 current=current.next;
             }
+            System.out.println();
         }
     }
 }

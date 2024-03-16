@@ -72,12 +72,17 @@ public class BasicFormulas {
             }
         }
         void InsertatMid(int index,int data){
+            noding temp=head;
             noding newN=new noding(data);
             if(head==null){
                 head=tail=newN;
             }
             else{
-                
+                for(int i=0;i<=index-1;i++){
+                    temp=temp.next;
+                }
+                newN.next=temp.next;
+                temp.next=newN;
             }
         }
     }

@@ -101,6 +101,7 @@ public class BasicFormulas {
                 while (temp.next != tail) {
                     temp = temp.next;
                 }
+                tail=temp.next;
             }
         }
     }

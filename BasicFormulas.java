@@ -120,7 +120,7 @@ public class BasicFormulas {
                 System.out.println("There is no Value in the Data");
             }
             else{
-                for(int i=0;i<=index-1;i++){
+                for(int i=0;i<index-1;i++){
                     temp=temp.next;
                 }
                 temp.next=temp.next.next;

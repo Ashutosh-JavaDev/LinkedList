@@ -78,6 +78,8 @@ public class BasicFormulas {
             o.create();
             System.out.println("Insert the value  in Start");
             o.InsertatBeggining(sc.nextInt());
+            System.out.println("Insert the value in the  End");
+            o.InsertatEnd(sc.nextInt());
             o.disp();
     }
 }

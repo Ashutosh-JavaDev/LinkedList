@@ -9,6 +9,7 @@ public class BasicFormulas{
         }
     }
     public static class listing{
-        
+        noding head=null;
+        noding tail=null;
     }
 }

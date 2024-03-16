@@ -73,6 +73,12 @@ public class BasicFormulas {
         }
         void InsertatMid(int index,int data){
             noding newN=new noding(data);
+            if(head==null){
+                head=tail=newN;
+            }
+            else{
+                
+            }
         }
     }
     public static void main(String[] args) {

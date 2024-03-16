@@ -94,6 +94,11 @@ public class BasicFormulas {
             o.InsertatBeggining(sc.nextInt());
             System.out.println("Insert the value in the  End");
             o.InsertatEnd(sc.nextInt());
+            System.out.println("Enter the Index where the daa want to insert");
+            int val=sc.nextInt();
+            System.out.println("Insert Data");
+            int da=sc.nextInt();
+            o.InsertatMid(val, da);
             o.disp();
     }
 }

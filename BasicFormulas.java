@@ -54,7 +54,11 @@ public class BasicFormulas {
         void InsertatBeggining(int data){
             noding newN=new noding(data);
             if(head==null){
-                head=tail=null;
+                head=tail=newN;
+            }
+            else{
+                newN.next=head;
+                head=newN;
             }
         }
     }

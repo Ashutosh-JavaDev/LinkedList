@@ -15,13 +15,17 @@ public class BasicFormulas {
     public static class listing {
         noding head = null;
         noding tail = null;
-        Scanner sc=new Scanner(System.in);
-        void create(int data) {
-           System.out.println("Press Stop to stop inserting Data");
-           String str=sc.nextLine();
-           if(str.equalsIgnoreCase("Stop")){
+        Scanner sc = new Scanner(System.in);
 
-           }
+        void create(int data) {
+            System.out.println("Press Stop to stop inserting Data");
+            String str;
+            while (true) {
+                str = sc.nextLine();
+                if (str.equalsIgnoreCase("Stop")) {
+                    break;
+                }
+            }
         }
     }
 }

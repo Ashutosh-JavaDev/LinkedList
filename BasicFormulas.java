@@ -71,6 +71,9 @@ public class BasicFormulas {
                 tail=newN;
             }
         }
+        void InsertatMid(int index,int data){
+            noding newN=new noding(data);
+        }
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);

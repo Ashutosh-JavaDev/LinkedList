@@ -101,7 +101,7 @@ public class BasicFormulas {
                 while (temp.next != tail) {
                     temp = temp.next;
                 }
-                tail=temp.next;
+                temp.next=temp.next.next;
             }
         }
     }
@@ -120,6 +120,7 @@ public class BasicFormulas {
         // int da=sc.nextInt();
         // o.InsertatMid(val, da);
         o.deleteatBeggining();
+        o.deleteAtend();
         o.disp();
     }
 }

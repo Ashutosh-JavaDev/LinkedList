@@ -85,20 +85,35 @@ public class BasicFormulas {
                 temp.next=newN;
             }
         }
+        void deleteatBeggining(){
+            if(head==null){
+                System.out.println("There is No Data in the list for Delete");
+                return;
+            }
+            else{
+                head=head.next;
+            }
+        }
+        void deleteAtend(){
+            if(head==null){
+                System.out.println("There is no Value in the Data");
+            }
+        }
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
             listing o=new listing();
             o.create();
-            System.out.println("Insert the value  in Start");
-            o.InsertatBeggining(sc.nextInt());
-            System.out.println("Insert the value in the  End");
-            o.InsertatEnd(sc.nextInt());
-            System.out.println("Enter the Index where the daa want to insert");
-            int val=sc.nextInt();
-            System.out.println("Insert Data");
-            int da=sc.nextInt();
-            o.InsertatMid(val, da);
+            // System.out.println("Insert the value  in Start");
+            // o.InsertatBeggining(sc.nextInt());
+            // System.out.println("Insert the value in the  End");
+            // o.InsertatEnd(sc.nextInt());
+            // System.out.println("Enter the Index where the daa want to insert");
+            // int val=sc.nextInt();
+            // System.out.println("Insert Data");
+            // int da=sc.nextInt();
+            // o.InsertatMid(val, da);
+            o.deleteatBeggining();
             o.disp();
     }
 }

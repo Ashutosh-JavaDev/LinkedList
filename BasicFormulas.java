@@ -61,6 +61,16 @@ public class BasicFormulas {
                 head=newN;
             }
         }
+        void InsertatEnd(int data){
+            noding newN=new noding(data);
+            if(head==null){
+                head=tail=newN;
+            }
+            else{
+                tail.next=newN;
+                tail=newN;
+            }
+        }
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);

@@ -15,9 +15,10 @@ public class BasicFormulas {
     public static class listing {
         noding head = null;
         noding tail = null;
-
+        Scanner sc=new Scanner(System.in);
         void create(int data) {
-
+           System.out.println("Press Stop to stop inserting Data");
+           
         }
     }
 }

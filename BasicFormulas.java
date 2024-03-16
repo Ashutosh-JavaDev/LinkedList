@@ -18,7 +18,10 @@ public class BasicFormulas {
         Scanner sc=new Scanner(System.in);
         void create(int data) {
            System.out.println("Press Stop to stop inserting Data");
-           
+           String str=sc.nextLine();
+           if(str.equalsIgnoreCase("Stop")){
+
+           }
         }
     }
 }

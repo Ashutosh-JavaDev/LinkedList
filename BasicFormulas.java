@@ -51,6 +51,12 @@ public class BasicFormulas {
             }
             System.out.println();
         }
+        void InsertatBeggining(int data){
+            noding newN=new noding(data);
+            if(head==null){
+                head=tail=null;
+            }
+        }
     }
     public static void main(String[] args) {
             listing o=new listing();

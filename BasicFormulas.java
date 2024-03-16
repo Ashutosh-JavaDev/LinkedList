@@ -32,6 +32,10 @@ public class BasicFormulas {
                         if(head==null){
                             head=tail=newN;
                         }
+                        else{
+                            tail.next=newN;
+                            tail=newN;
+                        }
                     }
                     catch(NumberFormatException e){
                         System.out.println("Invalid Input\nPress Stop or insert adding Number");

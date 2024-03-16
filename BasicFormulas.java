@@ -17,13 +17,25 @@ public class BasicFormulas {
         noding tail = null;
         Scanner sc = new Scanner(System.in);
 
-        void create(int data) {
+        void create() {
             System.out.println("Press Stop to stop inserting Data");
             String str;
             while (true) {
                 str = sc.nextLine();
                 if (str.equalsIgnoreCase("Stop")) {
                     break;
+                }
+                else{
+                    try{
+                        int data=Integer.parseInt(str);
+                        noding newN=new noding(data);
+                        if(head==null){
+                            head=tail=newN;
+                        }
+                    }
+                    catch(NumberFormatException e){
+                        System.out.println("Invalid Input\nPress Stop or insert adding Number");
+                    }
                 }
             }
         }

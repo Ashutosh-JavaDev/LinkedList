@@ -104,6 +104,17 @@ public class BasicFormulas {
                 temp.next=temp.next.next;
             }
         }
+        void deleteAnyIndex(int index){
+            noding temp=head;
+            if (head == null) {
+                System.out.println("There is no Value in the Data");
+            }
+            else{
+                for(int i=0;i<=index-1;i++){
+                    
+                }
+            }
+        }
     }
 
     public static void main(String[] args) {

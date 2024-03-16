@@ -52,4 +52,9 @@ public class BasicFormulas {
             System.out.println();
         }
     }
+    public static void main(String[] args) {
+            listing o=new listing();
+            o.create();
+            o.disp();
+    }
 }

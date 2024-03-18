@@ -137,6 +137,9 @@ public class BasicFormulas {
             
            
         }
+        void choice(int press){
+
+        }
     }
 
     public static void main(String[] args) {
@@ -144,8 +147,8 @@ public class BasicFormulas {
         listing o = new listing();
         o.create();
         o.deleteAnyIndex(sc.nextInt());
-        int res=o.counnt();
-        System.out.println(res);
+        // int res=o.counnt();
+        // System.out.println(res);
         o.disp();
     }
 }

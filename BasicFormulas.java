@@ -133,6 +133,7 @@ public class BasicFormulas {
         Scanner sc = new Scanner(System.in);
         listing o = new listing();
         o.create();
+        o.deleteAnyIndex(sc.nextInt());
         o.disp();
     }
 }

@@ -149,7 +149,8 @@ public class BasicFormulas {
                         break;
                     case 2:
                         disp();
-                        System.out.println("Press 1: To Add more Elements in Nodes or Press 3 to Press 10 as the given list");
+                        System.out.println(
+                                "Press 1: To Add more Elements in Nodes or Press 3 to Press 10 as the given list");
                         break;
                     case 3:
                         System.out.println("Enter the Value want to add in Beggining");
@@ -182,8 +183,11 @@ public class BasicFormulas {
                         System.out.println("Press 2:To Display Updated Linked List");
                         break;
                     case 9:
-                       int res=counnt();
-                    System.out.println(res);
+                        int res = counnt();
+                        System.out.println(res);
+                        System.out.println(
+                                "Press 1: To Add more Elements in Nodes or Press 2 to Press 10 as the given list");
+
                         break;
                     case 10:
                         System.out.println("Existing...");

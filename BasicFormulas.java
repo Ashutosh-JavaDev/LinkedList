@@ -49,15 +49,16 @@ public class BasicFormulas {
             }
             System.out.println();
         }
+
         int counnt() {
             noding current = head;
-            int c=0;
+            int c = 0;
             while (current != null) {
                 c++;
                 current = current.next;
             }
             return c;
-           
+
         }
 
         void InsertatBeggining(int data) {
@@ -111,32 +112,31 @@ public class BasicFormulas {
                 while (temp.next != tail) {
                     temp = temp.next;
                 }
-                temp.next=temp.next.next;
-                tail=temp;
+                temp.next = temp.next.next;
+                tail = temp;
             }
         }
-        void deleteAnyIndex(int index){
-            noding temp=head;
+
+        void deleteAnyIndex(int index) {
+            noding temp = head;
             if (head == null) {
                 System.out.println("There is no Value in the Data");
-            }
-            else{
-                for(int i=0;i<index-1;i++){
-                    temp=temp.next;
+            } else {
+                for (int i = 0; i < index - 1; i++) {
+                    temp = temp.next;
                 }
-                temp.next=temp.next.next;
+                temp.next = temp.next.next;
             }
-            try{
-                if(index>counnt()){
+            try {
+                if (index > counnt()) {
                     System.out.println("Invalid Index");
                 }
-            }
-            catch(ArrayIndexOutOfBoundsException e){
+            } catch (ArrayIndexOutOfBoundsException e) {
                 System.out.println(e);
             }
-            
-           
+
         }
+
         void choice(int press){
             System.out.println("Press 1: To Create Node  in Linked List\nPress 2: To Display\nPress 3: To Insert Element in Beggining\nPress 4: To Insert Element in Middle\nPress 5: To Insert Element at End\nPress 6: TO Delete ELement  From the Begonnong\nPress 7: To Delete Element from any of the Index\nPress 8:To Delete Element from the End\n Press 9: To Count the Size of the  Linked List\nPress 10: Exit");
             press=sc.nextInt();
@@ -145,7 +145,32 @@ public class BasicFormulas {
                     case 1:
                         create();
                         break;
-                
+                        case 2:
+                        disp();
+                        break;
+                        case 3:
+                        System.out.println("Enter the Value want to add in Beggining");
+                        InsertatBeggining(sc.nextInt());
+                        break;
+                        case 4:
+                        System.out.println("Enter the Index and the Value want to Insert in that Index");
+                        InsertatMid(sc.nextInt(), sc.nextInt());
+                        break;
+                        case 1:
+                        create();
+                        break;
+                        case 1:
+                        create();
+                        break;
+                        case 1:
+                        create();
+                        break;
+                        case 1:
+                        create();
+                        break;
+                         case 1:
+                        create();
+                        break;
                     default:
                         break;
                 }

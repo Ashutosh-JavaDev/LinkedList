@@ -137,11 +137,11 @@ public class BasicFormulas {
 
         }
 
-        void choice(int press) {
+        void choice() {
             System.out.println(
                     "Press 1: To Create Node  in Linked List\nPress 2: To Display\nPress 3: To Insert Element in Beggining\nPress 4: To Insert Element in Middle\nPress 5: To Insert Element at End\nPress 6: TO Delete ELement  From the Begonnong\nPress 7: To Delete Element from any of the Index\nPress 8:To Delete Element from the End\n Press 9: To Count the Size of the  Linked List\nPress 10: Exit");
             while (true) {
-                press = sc.nextInt();
+                int press = sc.nextInt();
 
                 if (press < 11) {
 
@@ -192,10 +192,6 @@ public class BasicFormulas {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         listing o = new listing();
-        o.create();
-        o.deleteAnyIndex(sc.nextInt());
-        // int res=o.counnt();
-        // System.out.println(res);
-        o.disp();
+        o.choice();
     }
 }

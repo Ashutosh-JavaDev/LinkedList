@@ -141,9 +141,9 @@ public class BasicFormulas {
         // System.out.println("Insert Data");
         // int da=sc.nextInt();
         // o.InsertatMid(val, da);
-        o.deleteatBeggining();
+        // o.deleteatBeggining();
         o.deleteAnyIndex(sc.nextInt());
-        o.deleteAtend();
+        // o.deleteAtend();
         o.disp();
     }
 }

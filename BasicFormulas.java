@@ -137,39 +137,42 @@ public class BasicFormulas {
 
         }
 
-        void choice(int press){
-            System.out.println("Press 1: To Create Node  in Linked List\nPress 2: To Display\nPress 3: To Insert Element in Beggining\nPress 4: To Insert Element in Middle\nPress 5: To Insert Element at End\nPress 6: TO Delete ELement  From the Begonnong\nPress 7: To Delete Element from any of the Index\nPress 8:To Delete Element from the End\n Press 9: To Count the Size of the  Linked List\nPress 10: Exit");
-            press=sc.nextInt();
-            while(true){
+        void choice(int press) {
+            System.out.println(
+                    "Press 1: To Create Node  in Linked List\nPress 2: To Display\nPress 3: To Insert Element in Beggining\nPress 4: To Insert Element in Middle\nPress 5: To Insert Element at End\nPress 6: TO Delete ELement  From the Begonnong\nPress 7: To Delete Element from any of the Index\nPress 8:To Delete Element from the End\n Press 9: To Count the Size of the  Linked List\nPress 10: Exit");
+            press = sc.nextInt();
+            while (true) {
                 switch (press) {
                     case 1:
                         create();
                         break;
-                        case 2:
+                    case 2:
                         disp();
                         break;
-                        case 3:
+                    case 3:
                         System.out.println("Enter the Value want to add in Beggining");
                         InsertatBeggining(sc.nextInt());
                         break;
-                        case 4:
+                    case 4:
                         System.out.println("Enter the Index and the Value want to Insert in that Index");
                         InsertatMid(sc.nextInt(), sc.nextInt());
                         break;
-                        case 1:
-                        create();
+                    case 5:
+                        System.out.println("Enter the Value want to add at End");
+                        InsertatEnd(sc.nextInt());
                         break;
-                        case 1:
-                        create();
+                    case 6:
+                        deleteatBeggining();
                         break;
-                        case 1:
-                        create();
+                    case 7:
+                        System.out.println("From which Index You want to delete Node");
+                        deleteAnyIndex(sc.nextInt());
                         break;
-                        case 1:
-                        create();
+                    case 8:
+                        deleteAtend();
                         break;
-                         case 1:
-                        create();
+                    case 9:
+                        counnt();
                         break;
                     default:
                         break;

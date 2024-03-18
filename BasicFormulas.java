@@ -145,6 +145,7 @@ public class BasicFormulas {
                 switch (press) {
                     case 1:
                         create();
+                        System.out.println("Press 2:To Display");
                         break;
                     case 2:
                         disp();
@@ -152,24 +153,32 @@ public class BasicFormulas {
                     case 3:
                         System.out.println("Enter the Value want to add in Beggining");
                         InsertatBeggining(sc.nextInt());
+                        System.out.println("Press 2:To Display Updated Linked List");
                         break;
                     case 4:
                         System.out.println("Enter the Index and the Value want to Insert in that Index");
                         InsertatMid(sc.nextInt(), sc.nextInt());
+                        System.out.println("Press 2:To Display Updated Linked List");
                         break;
                     case 5:
                         System.out.println("Enter the Value want to add at End");
                         InsertatEnd(sc.nextInt());
+                        System.out.println("Press 2:To Display Updated Linked List");
                         break;
                     case 6:
                         deleteatBeggining();
+
+                        System.out.println("Press 2:To Display Updated Linked List");
                         break;
                     case 7:
                         System.out.println("From which Index You want to delete Node");
                         deleteAnyIndex(sc.nextInt());
+
+                        System.out.println("Press 2:To Display Updated Linked List");
                         break;
                     case 8:
                         deleteAtend();
+                        System.out.println("Press 2:To Display Updated Linked List");
                         break;
                     case 9:
                         counnt();

@@ -149,6 +149,7 @@ public class BasicFormulas {
                         break;
                     case 2:
                         disp();
+                        System.out.println("Press 1: To Add more Elements in Nodes or Press 3 to Press 10 as the given list");
                         break;
                     case 3:
                         System.out.println("Enter the Value want to add in Beggining");

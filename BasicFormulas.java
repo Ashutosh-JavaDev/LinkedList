@@ -56,7 +56,7 @@ public class BasicFormulas {
                 c++;
                 current = current.next;
             }
-            return counnt();
+            return c;
            
         }
 

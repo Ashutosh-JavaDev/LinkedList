@@ -49,14 +49,15 @@ public class BasicFormulas {
             }
             System.out.println();
         }
-        void counnt() {
+        int counnt() {
             noding current = head;
             int c=0;
             while (current != null) {
                 c++;
                 current = current.next;
             }
-            System.out.println();
+            return counnt();
+           
         }
 
         void InsertatBeggining(int data) {
@@ -134,6 +135,8 @@ public class BasicFormulas {
         listing o = new listing();
         o.create();
         o.deleteAnyIndex(sc.nextInt());
+        int res=o.counnt();
+        System.out.println(res);
         o.disp();
     }
 }

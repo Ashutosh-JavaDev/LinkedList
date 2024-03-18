@@ -120,13 +120,22 @@ public class BasicFormulas {
             if (head == null) {
                 System.out.println("There is no Value in the Data");
             }
-            
             else{
                 for(int i=0;i<index-1;i++){
                     temp=temp.next;
                 }
                 temp.next=temp.next.next;
             }
+            try{
+                if(index>counnt()){
+                    System.out.println("Invalid Index");
+                }
+            }
+            catch(ArrayIndexOutOfBoundsException e){
+                System.out.println(e);
+            }
+            
+           
         }
     }
 

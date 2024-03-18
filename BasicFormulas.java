@@ -18,7 +18,7 @@ public class BasicFormulas {
         Scanner sc = new Scanner(System.in);
 
         void create() {
-            System.out.println("Press Stop to stop inserting Data");
+            // System.out.println("Press Stop to stop inserting Data");
             String str;
             while (true) {
                 str = sc.nextLine();
@@ -35,7 +35,7 @@ public class BasicFormulas {
                             tail = newN;
                         }
                     } catch (NumberFormatException e) {
-                        System.out.println("Invalid Input\nPress Stop or insert adding Number");
+                        System.out.println("Press Stop or insert adding Number");
                     }
                 }
             }
@@ -179,7 +179,7 @@ public class BasicFormulas {
                         return;
                     default:
                         System.out.println("Invlid Press");
-                        break;
+                        return;
                 }
 
             }

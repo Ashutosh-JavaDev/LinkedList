@@ -138,7 +138,7 @@ public class BasicFormulas {
            
         }
         void choice(int press){
-
+            System.out.println("Press 1: To Create Node  in Linked List\nPress 2: To Display\nPress 3: To Insert Element in Beggining\nPress 4: To Insert Element in Middle\nPress 5: To Insert Element at End\nPress 6:");
         }
     }
 

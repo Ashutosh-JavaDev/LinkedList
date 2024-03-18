@@ -139,6 +139,7 @@ public class BasicFormulas {
         }
         void choice(int press){
             System.out.println("Press 1: To Create Node  in Linked List\nPress 2: To Display\nPress 3: To Insert Element in Beggining\nPress 4: To Insert Element in Middle\nPress 5: To Insert Element at End\nPress 6: TO Delete ELement  From the Begonnong\nPress 7: To Delete Element from any of the Index\nPress 8:To Delete Element from the End\n Press 9: To Count the Size of the  Linked List\nPress 10: Exit");
+            press=sc.nextInt();
         }
     }
 

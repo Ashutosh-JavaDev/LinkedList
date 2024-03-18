@@ -181,7 +181,8 @@ public class BasicFormulas {
                         System.out.println("Press 2:To Display Updated Linked List");
                         break;
                     case 9:
-                        counnt();
+                       int res=counnt();
+                    System.out.println(res);
                         break;
                     case 10:
                         System.out.println("Existing...");

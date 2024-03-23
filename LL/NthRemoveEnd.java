@@ -33,6 +33,7 @@ public class NthRemoveEnd {
         }
     }
     public static void main(String[] args) {
+        Scanner ac=new Scanner(System.in);
         nthRemove a=new nthRemove(12);
         nthRemove b=new nthRemove(11);
         nthRemove c=new nthRemove(13);
@@ -44,7 +45,9 @@ public class NthRemoveEnd {
         d.next=e;
         NthNodeRemove ob=new NthNodeRemove();
         ob.Disp(a);
-        ob.removeEnd(a, 4);
+        System.out.println("Which Index You Want to remove from End?");
+        int index=ac.nextInt();
+        ob.removeEnd(a,index);
         ob.Disp(a);
 
     }

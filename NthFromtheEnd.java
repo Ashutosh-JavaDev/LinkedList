@@ -8,4 +8,9 @@ public class NthFromtheEnd {
             this.data=data;
         }
     }
+    public class nthEndNode{
+        public static void ending(nthEnd head){
+            
+        }
+    }
 }

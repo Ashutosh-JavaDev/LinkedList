@@ -15,7 +15,7 @@ public class NthNodeFromstart {
     public static class NthFind {
         public static void finding(nthNode head, int index) {
             nthNode temp = head;
-            for (int i = 0; i <= index; i++) {
+            for (int i = 0; i < index; i++) {
                 temp = temp.next;
             }
             System.out.println(temp.data);

@@ -9,8 +9,16 @@ public class NthFromtheEnd {
         }
     }
     public class nthEndNode{
-        public static void ending(nthEnd head){
-            
+        public static void ending(nthEnd head,int index){
+            nthEnd fast=head;
+            nthEnd slow=head;
+            for(int i=0;i<index;i++){
+                fast=fast.next;
+            }
+            while(fast!=null){
+                slow=slow.next;
+                fast=fast.next;
+            }
         }
     }
 }

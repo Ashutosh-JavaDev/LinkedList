@@ -44,7 +44,7 @@ public class NthRemoveEnd {
         d.next=e;
         NthNodeRemove ob=new NthNodeRemove();
         ob.Disp(a);
-        ob.removeEnd(a, 2);
+        ob.removeEnd(a, 4);
         ob.Disp(a);
 
     }

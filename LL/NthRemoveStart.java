@@ -25,6 +25,7 @@ public class NthRemoveStart {
         }
     }
     public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
         nthStartRem a=new nthStartRem(1);
         nthStartRem b=new nthStartRem(12);
         nthStartRem c=new nthStartRem(13);
@@ -34,6 +35,11 @@ public class NthRemoveStart {
         b.next=c;
         c.next=d;
         d.next=e;
-
-    }
+        NthRemovingStart ob=new NthRemovingStart();
+        ob.disp(a);
+        System.out.println("Which Index you want to Remove from the Start");
+        int index=sc.nextInt();
+        ob.NthStartRem(a, index);
+        ob.disp(a);
+    }   
 }

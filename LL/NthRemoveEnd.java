@@ -29,6 +29,7 @@ public class NthRemoveEnd {
                 System.out.print(temp.data+" ");
                 temp=temp.next;
             }
+            System.out.println();
         }
     }
     public static void main(String[] args) {
@@ -42,6 +43,7 @@ public class NthRemoveEnd {
         c.next=d;
         d.next=e;
         NthNodeRemove ob=new NthNodeRemove();
+        ob.Disp(a);
         ob.removeEnd(a, 2);
         ob.Disp(a);
 

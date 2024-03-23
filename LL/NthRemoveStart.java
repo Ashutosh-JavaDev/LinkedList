@@ -15,5 +15,13 @@ public class NthRemoveStart {
             }
             temp.next=temp.next.next;
         }
+        public static void disp(nthStartRem head){
+            nthStartRem temp=head;
+            while(temp!=null){
+                System.out.print(temp.data+" ");
+                temp=temp.next;
+            }
+            System.out.println();
+        }
     }
 }

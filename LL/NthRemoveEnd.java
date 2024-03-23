@@ -31,4 +31,16 @@ public class NthRemoveEnd {
             }
         }
     }
+    public static void main(String[] args) {
+        nthRemove a=new nthRemove(12);
+        nthRemove b=new nthRemove(11);
+        nthRemove c=new nthRemove(13);
+        nthRemove d=new nthRemove(14);
+        nthRemove e=new nthRemove(15);
+        a.next=b;
+        b.next=c;
+        c.next=d;
+        d.next=e;
+
+    }
 }

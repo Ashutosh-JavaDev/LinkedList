@@ -24,4 +24,16 @@ public class NthRemoveStart {
             System.out.println();
         }
     }
+    public static void main(String[] args) {
+        nthStartRem a=new nthStartRem(1);
+        nthStartRem b=new nthStartRem(12);
+        nthStartRem c=new nthStartRem(13);
+        nthStartRem d=new nthStartRem(14);
+        nthStartRem e=new nthStartRem(15);
+        a.next=b;
+        b.next=c;
+        c.next=d;
+        d.next=e;
+
+    }
 }

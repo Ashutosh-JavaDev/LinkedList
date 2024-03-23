@@ -36,6 +36,7 @@ public class NthFromtheEnd {
         nthEnd d = new nthEnd(14);
 
         nthEnd e = new nthEnd(15);
-
+        nthEndNode ob=new nthEndNode();
+        ob.ending(a, 3);
     }
 }

@@ -17,9 +17,10 @@ public class NthRemoveEnd {
                 fast=fast.next;
             }
             while(fast.next!=null){
-                slow.next=slow.next.next;
                 fast=fast.next;
+                slow=slow.next;
             }
+            slow.next=slow.next.next;
 
         }
     }

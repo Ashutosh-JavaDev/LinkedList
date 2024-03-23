@@ -23,5 +23,12 @@ public class NthRemoveEnd {
             slow.next=slow.next.next;
 
         }
+        public static void Disp(nthRemove head){
+            nthRemove temp=head;
+            while(temp!=null){
+                System.out.print(temp.data+" ");
+                temp=temp.next;
+            }
+        }
     }
 }

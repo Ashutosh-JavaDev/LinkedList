@@ -11,8 +11,16 @@ public class NthRemoveEnd {
     }
     public static class NthNodeRemove{
         public static void removeEnd(nthRemove head, int index){
+            nthRemove slow=head;
+            nthRemove fast=head;
+            for(int i=0;i<index;i++){
+                fast=fast.next;
+            }
+            while(fast.next!=null){
+                slow.next=slow.next.next;
+                fast=fast.next;
+            }
 
-            
         }
     }
 }

@@ -19,6 +19,7 @@ public class NthFromtheEnd {
                 slow=slow.next;
                 fast=fast.next;
             }
+            System.out.println(slow.data);
         }
     }
 }

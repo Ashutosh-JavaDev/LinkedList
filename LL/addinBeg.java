@@ -9,7 +9,7 @@ class Node {
     }
 
     public static Node insertInBeg(Node head) {
-        Node newNode = new Node(10);
+        Node newNode = new Node(0);
         newNode.next = head;
         return newNode;
 

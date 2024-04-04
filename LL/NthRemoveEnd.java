@@ -45,7 +45,7 @@ public class NthRemoveEnd {
         d.next=e;
         NthNodeRemove ob=new NthNodeRemove();
         ob.Disp(a);
-        System.out.println("Which Index You Want to remove from ?");
+        System.out.println("Which Index You Want to remove from End?");
         int index=ac.nextInt();
         ob.removeEnd(a,index);
         ob.Disp(a);

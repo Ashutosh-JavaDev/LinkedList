@@ -38,7 +38,7 @@ public class NthRemoveEnd {
         nthRemove b=new nthRemove(11);
         nthRemove c=new nthRemove(13);
         nthRemove d=new nthRemove(14);
-        nthRemove e=new nthRemove(15);
+        nthRemove e=new nthRemove(10);
         a.next=b;
         b.next=c;
         c.next=d;

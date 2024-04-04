@@ -24,10 +24,10 @@ public class NthRemoveEnd {
 
         }
         public static void Disp(nthRemove head){
-            nthRemove temp=head;
-            while(temp!=null){
-                System.out.print(temp.data+" ");
-                temp=temp.next;
+            nthRemove tem=head;
+            while(tem!=null){
+                System.out.print(tem.data+" ");
+                tem=tem.next;
             }
             System.out.println();
         }

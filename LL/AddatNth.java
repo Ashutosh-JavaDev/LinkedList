@@ -9,8 +9,8 @@ public class AddatNth {
         }
     }
     public static class nthAdd{
-        public void adding(addNth head){
-            
+        public void adding(addNth head,int position){
+            Scanner sc=new Scanner(System.in);
         }
     }
 }

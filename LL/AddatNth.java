@@ -17,7 +17,7 @@ public class AddatNth {
             for (int i = 0; i < position; i++) {
                 item = item.next;
             }
-            temp.next = item.next.next;
+            temp.next = item.next;
             item.next = temp;
         }
 

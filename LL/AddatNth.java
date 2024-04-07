@@ -20,5 +20,31 @@ public class AddatNth {
             temp.next=item.next.next;
             item.next=temp;
         }
+        public static void display(addNth head){
+            addNth temp=head;
+            while(temp!=null){
+                temp=temp.next;
+            }
+            
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        addNth a=new addNth(1);
+        addNth b=new addNth(2);
+        addNth c=new addNth(4);
+        addNth d=new addNth(5);
+        a.next=b;
+        b.next=c;
+        c.next=d;
+        nthAdd ob=new nthAdd();
+        System.out.println("Enter the Position where you want ot add Data");
+        int position=sc.nextInt();
+        ob.adding(a, position, 3);
+
+
+
+
+
     }
 }

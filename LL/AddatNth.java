@@ -14,7 +14,7 @@ public class AddatNth {
         public static void adding(addNth head, int position, int value) {
             addNth temp = new addNth(value);
             addNth item = head;
-            for (int i = 0; i < position; i++) {
+            for (int i = 0; i < position-1; i++) {
                 item = item.next;
             }
             temp.next = item.next;
@@ -42,7 +42,7 @@ public class AddatNth {
         b.next = c;
         c.next = d;
         nthAdd ob = new nthAdd();
-        System.out.println("Enter the Position where you want ot add Data");
+        System.out.println("Enter the Position after which you want to add Data");
         int position = sc.nextInt();
         ob.adding(a, position, 3);
         ob.display(a);

@@ -16,4 +16,12 @@ public class findNthNumber {
             return temp.next.data;
         }
     }  
+    public static void main(String[] args) {
+        NthNumber a=new NthNumber(1);
+        NthNumber b=new NthNumber(2);
+        NthNumber c=new NthNumber(3);
+        NthNumber d=new NthNumber(4);
+        NthNumber e=new NthNumber(5);
+
+    }
 }

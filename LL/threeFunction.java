@@ -19,8 +19,8 @@ public class threeFunction {
         void create() {
             Scanner sc = new Scanner(System.in);
             System.out.println("Press stop to Stop inserting Value");
+            System.out.println("Enter Value in the List: ");
             while (true) {
-                System.out.println("Enter Value in the List: ");
                 String st = sc.nextLine();
                 if (st.equalsIgnoreCase("Stop")) {
                     return;

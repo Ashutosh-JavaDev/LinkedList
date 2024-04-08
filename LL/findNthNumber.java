@@ -8,8 +8,12 @@ public class findNthNumber {
         }
     }  
     public static class numberNth{
-        void find(NthNumber head){
-            
+        int find(NthNumber head,int pos){
+            NthNumber temp=head;
+            for(int i=0;i<pos;i++){
+                temp=temp.next;
+            }
+            return temp.next.data;
         }
     }  
 }

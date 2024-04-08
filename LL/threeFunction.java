@@ -41,6 +41,14 @@ public class threeFunction {
             }
         }
 
+        void delete(int pos) {
+            Three temp = head;
+            for (int i = 0; i < pos-1; i++) {
+                temp=temp.next;
+            }
+            temp.next=temp.next.next;
+        }
+
         void disp() {
             Three temp = head;
             while (temp != null) {
@@ -54,6 +62,7 @@ public class threeFunction {
     public static void main(String[] args) {
         functions ob = new functions();
         ob.create();
+        ob.delete(3);
         ob.disp();
     }
 }

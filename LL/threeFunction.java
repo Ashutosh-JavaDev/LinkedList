@@ -52,12 +52,15 @@ public class threeFunction {
         void delete(int pos) {
             // System.out.println("Ent")
             Three temp = head;
+            if(head==null){
+                System.out.println("There is No value in this data");
+            }
             for (int i = 0; i < pos-1; i++) {
                 temp=temp.next;
             }
             temp.next=temp.next.next;
-            if(pos==count()){
-                
+            if(pos>count()){
+                System.out.println("Invalid Position");
             }
         }
 

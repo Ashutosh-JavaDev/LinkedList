@@ -17,7 +17,7 @@ public class Reverse {
             }
             revs(temp.next);
             System.out.print(temp.data+" ");
-            System.out.println();
+            // System.out.println();
         }
     }
     public static void main(String[] args) {
@@ -32,6 +32,6 @@ public class Reverse {
         d.next=e;
         reverse ob=new reverse();
         ob.revs(a);
-
+        System.out.println();
     }
 }

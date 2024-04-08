@@ -39,4 +39,9 @@ public class threeFunction {
             System.out.println();
         }
     }
+    public static void main(String[] args) {
+        functions ob=new functions();
+        ob.create();
+        ob.disp();
+    }
 }

@@ -22,8 +22,12 @@ public class findNthNumber {
         NthNumber c=new NthNumber(3);
         NthNumber d=new NthNumber(4);
         NthNumber e=new NthNumber(5);
+        a.next=b;
+        b.next=c;
+        c.next=d;
+        d.next=e;
         numberNth ob=new numberNth();
-        int res=ob.find(a, 2);
+        int res=ob.find(a, 3);
         System.out.println("Output: "+res);
     }
 }

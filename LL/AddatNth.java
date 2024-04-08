@@ -14,7 +14,7 @@ public class AddatNth {
         public static void adding(addNth head, int position, int value) {
             addNth temp = new addNth(value);
             addNth item = head;
-            for (int i = 0; i < position-1; i++) {
+            for (int i = 0; i < position - 1; i++) {
                 item = item.next;
             }
             temp.next = item.next;

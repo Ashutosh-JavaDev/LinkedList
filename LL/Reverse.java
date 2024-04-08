@@ -25,7 +25,12 @@ public class Reverse {
         rev c=new rev(3);
         rev d=new rev(4);
         rev e=new rev(5);
-        
+        a.next=b;
+        b.next=c;
+        c.next=d;
+        d.next=e;
+        reverse ob=new reverse();
+        ob.revs(a);
 
     }
 }

@@ -14,9 +14,9 @@ public class threeFunction {
 
     public static class functions {
         Three head;
-        Three tail;
+        Three tail = null;
 
-        public static void create() {
+        void create() {
             Scanner sc = new Scanner(System.in);
             System.out.println("Press stop to Stop inserting Value");
             while (true) {
@@ -24,10 +24,10 @@ public class threeFunction {
                 String st = sc.nextLine();
                 if (st.equalsIgnoreCase("Stop")) {
                     return;
-                }
-                else{
-                    int num=Integer.parseInt(st);
-                    Three a=new Three(num);
+                } else {
+                    int num = Integer.parseInt(st);
+                    Three a = new Three(num);
+                    a.next = tail;
                 }
             }
         }

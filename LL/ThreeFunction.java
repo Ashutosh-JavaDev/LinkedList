@@ -1,8 +1,6 @@
-
-// Insertion, Delete and Transveral
 import java.util.Scanner;
 
-public class threeFunction {
+public class ThreeFunction {
     public static class Three {
         int data;
         Three next;
@@ -12,14 +10,14 @@ public class threeFunction {
         }
     }
 
-    public static class functions {
+    public static class Functions {
         Three head = null;
         Three tail = null;
 
         void create() {
             Scanner sc = new Scanner(System.in);
-            System.out.println("Press stop to Stop inserting Value");
-            System.out.println("Enter Value in the List: ");
+            System.out.println("Press 'Stop' to stop inserting values");
+            System.out.println("Enter values in the list: ");
             while (true) {
                 String st = sc.nextLine();
                 if (st.equalsIgnoreCase("Stop")) {
@@ -35,27 +33,26 @@ public class threeFunction {
                             tail = newN;
                         }
                     } catch (Exception e) {
-                        System.out.println("Press Stop or Add Number");
+                        System.out.println("Please enter a valid number or 'Stop'");
                     }
                 }
             }
         }
 
-     
-
         void delete(int pos) {
-            // System.out.println("Ent")
-            Three temp = head;
-            if (head == null) {
-                System.out.println("There is No value in this data");
+            if (pos > count()) {
+                System.out.println("Invalid Position");
+                return; // Exit the method if the position is invalid
             }
-            for (int i = 0; i < pos - 1; i++) {
+            Three temp = head;
+            if (pos == 1) {
+                head = temp.next;
+                return;
+            }
+            for (int i = 0; i < pos - 2; i++) { // Adjusted the loop condition
                 temp = temp.next;
             }
             temp.next = temp.next.next;
-            if (pos > count()) {
-                System.out.println("Invalid Position");
-            }
         }
 
         void disp() {
@@ -66,21 +63,22 @@ public class threeFunction {
             }
             System.out.println();
         }
+
         int count() {
             int c = 0;
             Three temp = head;
             while (temp != null) {
                 c++;
-                temp=temp.next;
+                temp = temp.next; // Move temp pointer inside the loop
             }
             return c;
         }
     }
 
     public static void main(String[] args) {
-        functions ob = new functions();
+        Functions ob = new Functions();
         ob.create();
-        ob.delete(4);
+        ob.delete(1);
         ob.disp();
     }
 }

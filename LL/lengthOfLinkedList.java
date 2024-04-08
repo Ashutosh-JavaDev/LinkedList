@@ -5,7 +5,7 @@ public class lengthOfLinkedList {
         int data;
         length next;
 
-        length(int value) {
+        length(int data) {
             this.data = data;
         }
     }

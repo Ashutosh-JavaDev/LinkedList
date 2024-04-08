@@ -1,26 +1,28 @@
 import java.util.Scanner;
 
-class length {
-    int data;
-    length next;
-
-    length(int value) {
-        this.data = data;
-    }
-
-    public static void disp(length head) {
-        length temp = head;
-        while (temp != null) {
-            System.out.print(temp.data + " ");
-            temp = temp.next;
-        }
-        System.out.println();
-    }
-
-}
-
 public class lengthOfLinkedList {
+    public static class length {
+        int data;
+        length next;
+
+        length(int value) {
+            this.data = data;
+        }
+    }
+
+    public static class l {
+     public static  void disp(length head) {
+            length temp = head;
+            while (temp != null) {
+                System.out.print(temp.data + " ");
+                temp = temp.next;
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
+
         length a = new length(1);
         length b = new length(4);
         length c = new length(3);
@@ -30,7 +32,7 @@ public class lengthOfLinkedList {
         b.next = c;
         c.next = d;
         d.next = e;
-        length ob = new length(0);
+        l ob = new l();
         ob.disp(a);
     }
 }

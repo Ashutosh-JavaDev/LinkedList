@@ -40,26 +40,20 @@ public class threeFunction {
                 }
             }
         }
-        int count(){
-            int c=0;
-            Three temp=head;
-            while(temp!=null){
-                c++;
-            }
-            return c;
-        }
+
+     
 
         void delete(int pos) {
             // System.out.println("Ent")
             Three temp = head;
-            if(head==null){
+            if (head == null) {
                 System.out.println("There is No value in this data");
             }
-            for (int i = 0; i < pos-1; i++) {
-                temp=temp.next;
+            for (int i = 0; i < pos - 1; i++) {
+                temp = temp.next;
             }
-            temp.next=temp.next.next;
-            if(pos>count()){
+            temp.next = temp.next.next;
+            if (pos > count()) {
                 System.out.println("Invalid Position");
             }
         }
@@ -71,6 +65,15 @@ public class threeFunction {
                 temp = temp.next;
             }
             System.out.println();
+        }
+        int count() {
+            int c = 0;
+            Three temp = head;
+            while (temp != null) {
+                c++;
+                temp=temp.next;
+            }
+            return c;
         }
     }
 

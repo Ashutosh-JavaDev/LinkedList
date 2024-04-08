@@ -10,10 +10,10 @@ public class findNthNumber {
     public static class numberNth{
         int find(NthNumber head,int pos){
             NthNumber temp=head;
-            for(int i=0;i<pos;i++){
+            for(int i=0;i<pos-1;i++){
                 temp=temp.next;
             }
-            return temp.next.data;
+            return temp.data;
         }
     }  
     public static void main(String[] args) {
@@ -27,7 +27,7 @@ public class findNthNumber {
         c.next=d;
         d.next=e;
         numberNth ob=new numberNth();
-        int res=ob.find(a, 3);
+        int res=ob.find(a, 1);
         System.out.println("Output: "+res);
     }
 }

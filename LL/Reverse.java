@@ -11,12 +11,13 @@ public class Reverse {
     }
     public static class reverse{
         void revs(rev head){
-            // rev temp=head;
-            if(head==null){
+            rev temp=head;
+            if(temp==null){
                 return;
             }
-            revs(head.next);
-            System.out.print(head.data+" ");
+            revs(temp.next);
+            System.out.print(temp.data+" ");
+            System.out.println();
         }
     }
     public static void main(String[] args) {

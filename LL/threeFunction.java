@@ -40,13 +40,25 @@ public class threeFunction {
                 }
             }
         }
+        int count(){
+            int c=0;
+            Three temp=head;
+            while(temp!=null){
+                c++;
+            }
+            return c;
+        }
 
         void delete(int pos) {
+            // System.out.println("Ent")
             Three temp = head;
             for (int i = 0; i < pos-1; i++) {
                 temp=temp.next;
             }
             temp.next=temp.next.next;
+            if(pos==count()){
+                
+            }
         }
 
         void disp() {
@@ -62,7 +74,7 @@ public class threeFunction {
     public static void main(String[] args) {
         functions ob = new functions();
         ob.create();
-        ob.delete(3);
+        ob.delete(4);
         ob.disp();
     }
 }

@@ -25,6 +25,10 @@ public class threeFunction {
                 if (st.equalsIgnoreCase("Stop")) {
                     return;
                 }
+                else{
+                    int num=Integer.parseInt(st);
+                    Three a=new Three(num);
+                }
             }
         }
     }

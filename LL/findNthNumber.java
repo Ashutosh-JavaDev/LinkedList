@@ -3,8 +3,8 @@ public class findNthNumber {
     public static class NthNumber{
         int data;
         NthNumber next;
-        NthNumber(int value){
-            this.data=value;
+        NthNumber(int data){
+            this.data=data;
         }
     }  
     public static class numberNth{
@@ -23,7 +23,7 @@ public class findNthNumber {
         NthNumber d=new NthNumber(4);
         NthNumber e=new NthNumber(5);
         numberNth ob=new numberNth();
-        int res=ob.find(a, 3);
+        int res=ob.find(a, 2);
         System.out.println("Output: "+res);
     }
 }

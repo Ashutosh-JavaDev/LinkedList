@@ -13,7 +13,7 @@ public class threeFunction {
     }
 
     public static class functions {
-        Three head;
+        Three head=null;
         Three tail = null;
 
         void create() {
@@ -23,11 +23,13 @@ public class threeFunction {
             while (true) {
                 String st = sc.nextLine();
                 if (st.equalsIgnoreCase("Stop")) {
-                    return;
+                    break;
                 } else {
-                    int num = Integer.parseInt(st);
-                    Three a = new Three(num);
-                    a.next = tail;
+                   try{
+                    int num=Integer.parseInt(st);
+                    Three newN=new Three(num);
+                    head=tail=newN;
+                   }
                 }
             }
         }
@@ -35,6 +37,7 @@ public class threeFunction {
             Three temp=head;
             while(temp!=null){
                 System.out.print(temp.data+" ");
+                temp=temp.next;
             }
             System.out.println();
         }

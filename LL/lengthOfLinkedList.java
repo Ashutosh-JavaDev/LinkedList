@@ -44,5 +44,7 @@ public class lengthOfLinkedList {
         d.next = e;
         l ob = new l();
         ob.disp(a);
+        int res=ob.len(a);
+        System.out.println("Length: "+res);
     }
 }

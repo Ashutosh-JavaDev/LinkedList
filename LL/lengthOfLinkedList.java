@@ -11,7 +11,17 @@ public class lengthOfLinkedList {
     }
 
     public static class l {
-     public static  void disp(length head) {
+        public static int len(length head) {
+            int count = 0;
+            length temp = head;
+            while (temp != null) {
+                count++;
+                temp=temp.next;
+            }
+            return count;
+        }
+
+        public static void disp(length head) {
             length temp = head;
             while (temp != null) {
                 System.out.print(temp.data + " ");

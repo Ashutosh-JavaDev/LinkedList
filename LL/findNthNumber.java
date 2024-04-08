@@ -6,5 +6,10 @@ public class findNthNumber {
         NthNumber(int value){
             this.data=value;
         }
-    }    
+    }  
+    public static class numberNth{
+        void find(NthNumber head){
+            
+        }
+    }  
 }

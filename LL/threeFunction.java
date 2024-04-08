@@ -13,7 +13,7 @@ public class threeFunction {
     }
 
     public static class functions {
-        Three head=null;
+        Three head = null;
         Three tail = null;
 
         void create() {
@@ -25,25 +25,34 @@ public class threeFunction {
                 if (st.equalsIgnoreCase("Stop")) {
                     break;
                 } else {
-                   try{
-                    int num=Integer.parseInt(st);
-                    Three newN=new Three(num);
-                    head=tail=newN;
-                   }
+                    try {
+                        int num = Integer.parseInt(st);
+                        Three newN = new Three(num);
+                        if (head == null) {
+                            head = tail = newN;
+                        } else {
+                            tail.next = newN;
+                            tail = newN;
+                        }
+                    } catch (Exception e) {
+                        System.out.println("Press Stop or Add Number");
+                    }
                 }
             }
         }
-        void disp(){
-            Three temp=head;
-            while(temp!=null){
-                System.out.print(temp.data+" ");
-                temp=temp.next;
+
+        void disp() {
+            Three temp = head;
+            while (temp != null) {
+                System.out.print(temp.data + " ");
+                temp = temp.next;
             }
             System.out.println();
         }
     }
+
     public static void main(String[] args) {
-        functions ob=new functions();
+        functions ob = new functions();
         ob.create();
         ob.disp();
     }

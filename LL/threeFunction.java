@@ -31,5 +31,12 @@ public class threeFunction {
                 }
             }
         }
+        void disp(){
+            Three temp=head;
+            while(temp!=null){
+                System.out.print(temp.data+" ");
+            }
+            System.out.println();
+        }
     }
 }

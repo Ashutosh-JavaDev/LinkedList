@@ -31,6 +31,11 @@ public class deleteFromValue {
         itemNode c=new itemNode(3);
         itemNode d=new itemNode(4);
         itemNode e=new itemNode(5);
-
+        a.next=b;
+        b.next=c;
+        c.next=d;
+        d.next=e;
+        deleteValue ob=new deleteValue();
+        ob.askDelete(a, 3);
     }
 }

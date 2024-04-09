@@ -1,4 +1,4 @@
-public class DeleteFromValue {
+public class deleteFromValue {
     public static class ItemNode {
         int data;
         ItemNode next;
@@ -9,27 +9,24 @@ public class DeleteFromValue {
     }
 
     public static class DeleteValue {
-        public static void askDelete(ItemNode head, int value) {
+        public static ItemNode askDelete(ItemNode head, int value) {
             // Check if the head node needs to be deleted
             if (head != null && head.data == value) {
-                head = head.next;
-                return;
+                return head.next; // Return the new head after deletion
             }
 
             ItemNode temp = head;
 
-            // Traverse until the node to be deleted is found or end of list is reached
-            while (temp != null && temp.next != null && temp.next.data != value) {
+            while (temp != null && temp.next != null) {
+                if (temp.next.data == value) {
+                    temp.next = temp.next.next; // Skip the node to be deleted
+                    return head; // Return the original head
+                }
                 temp = temp.next;
             }
 
-            if (temp == null || temp.next == null) {
-                System.out.println("Value is not in the list for deletion.");
-                return;
-            }
-
-            // Skip the node to be deleted by adjusting the next reference of its previous node
-            temp.next = temp.next.next;
+            System.out.println("Value is not in the list for deletion.");
+            return head; // Return the original head as no deletion was performed
         }
 
         public static void disp(ItemNode head) {
@@ -55,7 +52,7 @@ public class DeleteFromValue {
 
         DeleteValue ob = new DeleteValue();
         ob.disp(a); // Display the initial list
-        ob.askDelete(a, 6); // Try to delete a value not in the list
+        a = ob.askDelete(a, 1); // Update the head after deletion
         ob.disp(a); // Display the modified list
     }
 }

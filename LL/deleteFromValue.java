@@ -9,7 +9,19 @@ public class deleteFromValue {
     }
 
     public static class deleteValue {
-        public static void askDelete(int value) {
+        public static void askDelete(itemNode head,int value) {
+            itemNode temp=head;
+            int c=0;
+            while(temp!=null){
+                if(temp.next.data==value){
+                    c++;
+                    temp.next=temp.next.next;
+                }
+                temp=temp.next;
+            }
+            if(c==0){
+                System.out.println("Value is Not in the List for Delete");
+            }
 
         }
     }

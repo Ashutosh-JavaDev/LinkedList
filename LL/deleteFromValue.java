@@ -12,21 +12,25 @@ public class deleteFromValue {
         public static void askDelete(itemNode head, int value) {
             itemNode temp = head;
             int c = 0;
-            if(value==temp.data){
-                temp=temp.next;
+            // if (value == temp.data) {
+            //     temp = temp.next;
+            //     return;
+            // }
+            // while (temp != null) {
+            // if (temp.next.data == value) {
+            // c++;
+            // temp.next = temp.next.next;
+            // return;
+            // }
+            // temp = temp.next;
+            // }
+            if (temp == null) {
                 return;
             }
-            while (temp != null) {
-                if (temp.next.data == value) {
-                    c++;
-                    temp.next = temp.next.next;
-                    return;
-                }
-                temp = temp.next;
-            }
-            if (c == 0) {
-                System.out.println("Value is Not in the List for Delete");
-            }
+            askDelete(temp.next, value);
+            // if (c == 0) {
+                // System.out.println("Value is Not in the List for Delete");
+            // }
 
         }
 

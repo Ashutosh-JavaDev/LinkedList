@@ -14,6 +14,7 @@ public class deleteFromValue {
             int c = 0;
             if(value==temp.data){
                 temp=temp.next;
+                return;
             }
             while (temp != null) {
                 if (temp.next.data == value) {

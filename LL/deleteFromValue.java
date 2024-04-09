@@ -47,6 +47,8 @@ public class deleteFromValue {
         c.next = d;
         d.next = e;
         deleteValue ob = new deleteValue();
+        ob.disp(a);
         ob.askDelete(a, 2);
+        ob.disp(a);
     }
 }

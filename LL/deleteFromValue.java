@@ -25,4 +25,12 @@ public class deleteFromValue {
 
         }
     }
+    public static void main(String[] args) {
+        itemNode a=new itemNode(1);
+        itemNode b=new itemNode(2);
+        itemNode c=new itemNode(3);
+        itemNode d=new itemNode(4);
+        itemNode e=new itemNode(5);
+
+    }
 }

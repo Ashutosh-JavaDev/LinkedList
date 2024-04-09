@@ -12,6 +12,9 @@ public class deleteFromValue {
         public static void askDelete(itemNode head, int value) {
             itemNode temp = head;
             int c = 0;
+            if(value==temp.data){
+                temp=temp.next;
+            }
             while (temp != null) {
                 if (temp.next.data == value) {
                     c++;
@@ -33,6 +36,7 @@ public class deleteFromValue {
 
                 temp = temp.next;
             }
+            System.out.println();
         }
     }
 
@@ -48,7 +52,7 @@ public class deleteFromValue {
         d.next = e;
         deleteValue ob = new deleteValue();
         ob.disp(a);
-        ob.askDelete(a, 2);
+        ob.askDelete(a, 1);
         ob.disp(a);
     }
 }

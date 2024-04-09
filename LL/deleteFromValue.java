@@ -10,12 +10,13 @@ public class deleteFromValue {
 
     public static class deleteValue {
         public static void askDelete(itemNode head, int value) {
-            itemNode temp = head;
             int c = 0;
-            if (temp != null && value == temp.data) {
-                head = temp.next;
+            if (head != null && value == head.data) {
+                head = head.next;
                 return;
             }
+            itemNode temp = head;
+
             while (temp != null && temp.next.data != value && temp.next != null) {
                 temp = temp.next;
             }
@@ -49,7 +50,7 @@ public class deleteFromValue {
         d.next = e;
         deleteValue ob = new deleteValue();
         ob.disp(a);
-        ob.askDelete(a, 6);
+        ob.askDelete(a, 1);
         ob.disp(a);
     }
 }

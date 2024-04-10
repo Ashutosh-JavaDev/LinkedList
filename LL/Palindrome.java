@@ -7,6 +7,9 @@ public class Palindrome {
         }
     }
     public static class drome{
+        public static void rem(palin head ){
+            
+        } 
         public static void disp(palin head){
             palin temp=head;
             if(temp==null){

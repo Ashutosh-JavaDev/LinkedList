@@ -52,7 +52,7 @@ public class deleteFromValue {
 
         DeleteValue ob = new DeleteValue();
         ob.disp(a); // Display the initial list
-        a = ob.askDelete(a, 1); // Update the head after deletion
+        a = ob.askDelete(a, 13); // Update the head after deletion
         ob.disp(a); // Display the modified list
     }
 }

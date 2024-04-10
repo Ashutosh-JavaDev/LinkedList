@@ -10,7 +10,7 @@ public class Palindrome {
         public static void rem(palin head){
             palin temp=head;
             while(temp!=null){
-                
+                int d=temp.data;
             }
         } 
         public static void disp(palin head){

@@ -11,6 +11,8 @@ public class Palindrome {
             palin temp=head;
             while(temp!=null){
                 int d=temp.data;
+                String st=d+" ";
+                temp=temp.next;
             }
         } 
         public static void disp(palin head){

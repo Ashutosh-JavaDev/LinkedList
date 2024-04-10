@@ -38,4 +38,16 @@ public class Palindrome {
             disp(temp.next);
         }
     }
+    public static void main(String[] args) {
+        palin a=new palin(1);
+        palin b=new palin(2);
+        palin c=new palin(3);
+        palin d=new palin(2);
+        palin e=new palin(1);
+        a.next=b;
+        b.next=c;
+        c.next=d;
+        d.next=e;
+        
+    }
 }

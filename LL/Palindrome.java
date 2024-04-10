@@ -9,9 +9,10 @@ public class Palindrome {
     public static class drome{
         public static void rem(palin head){
             palin temp=head;
+            String st=" ";
             while(temp!=null){
                 int d=temp.data;
-                String st=d+" ";
+                 st=d+" ";
                 temp=temp.next;
             }
         } 

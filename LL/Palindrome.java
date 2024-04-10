@@ -48,6 +48,8 @@ public class Palindrome {
         b.next=c;
         c.next=d;
         d.next=e;
-        
+        drome ob=new drome();
+        ob.disp(a);
+        ob.rem(a);
     }
 }

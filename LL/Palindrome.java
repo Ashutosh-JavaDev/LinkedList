@@ -15,10 +15,10 @@ public class Palindrome {
             String str = " ";
             while (temp != null) {
                 int d = temp.data;
-                st =""+d;
+                st+=d;
                 temp = temp.next;
             }
-            for (int i = st.length(); i >= 0; i--) {
+            for (int i = st.length()-1; i >= 0; i--) {
                 char ch = st.charAt(i);
                 str +=ch;
             }

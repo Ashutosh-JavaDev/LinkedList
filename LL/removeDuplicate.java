@@ -18,7 +18,10 @@ public class removeDuplicate {
                 st += d;
                 temp = temp.next;
             }
-
+            for(int i=0;i<st.length();i++){
+                char ch=st.charAt(i);
+                
+            }
         }
     }
 }

@@ -36,7 +36,6 @@ public class Palindrome {
             }
             System.out.print(temp.data + " ");
             disp(temp.next);
-            System.out.println();
         }
     }
     public static void main(String[] args) {
@@ -51,6 +50,8 @@ public class Palindrome {
         d.next=e;
         drome ob=new drome();
         ob.disp(a);
+            System.out.println();
+
         ob.rem(a);
     }
 }

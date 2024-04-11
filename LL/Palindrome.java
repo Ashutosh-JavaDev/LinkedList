@@ -50,7 +50,7 @@ public class Palindrome {
         d.next=e;
         drome ob=new drome();
         ob.disp(a);
-            System.out.println();
+        System.out.println();
 
         ob.rem(a);
     }

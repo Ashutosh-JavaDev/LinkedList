@@ -8,7 +8,10 @@ public class MergeSortedLL {
         }
     }
 
-    public static void sorted(merge head) {
+    public static merge sorted(merge l1, merge l2) {
+        merge dummy = new merge(0);
+        merge current = dummy;
 
+        return dummy.next;
     }
 }

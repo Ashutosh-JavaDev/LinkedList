@@ -36,6 +36,7 @@ public class Palindrome {
             }
             System.out.print(temp.data + " ");
             disp(temp.next);
+            System.out.println();
         }
     }
     public static void main(String[] args) {

@@ -11,7 +11,12 @@ public class MergeSortedLL {
     public static merge sorted(merge l1, merge l2) {
         merge dummy = new merge(0);
         merge current = dummy;
-
+        while (l1 != null && l2 != null) {
+            if (l1.data <= l2.data) {
+                current.next = l1;
+                l1 = l1.next;
+            }
+        }
         return dummy.next;
     }
 }

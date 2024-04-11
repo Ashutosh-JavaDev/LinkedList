@@ -7,4 +7,8 @@ public class MergeSortedLL {
             this.data = data;
         }
     }
+
+    public static void sorted(merge head) {
+
+    }
 }

@@ -15,7 +15,7 @@ public class Palindrome {
             String str = " ";
             while (temp != null) {
                 int d = temp.data;
-                st = d + " ";
+                st =""+d;
                 temp = temp.next;
             }
             for (int i = st.length(); i >= 0; i--) {

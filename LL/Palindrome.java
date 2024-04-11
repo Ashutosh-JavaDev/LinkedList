@@ -20,7 +20,7 @@ public class Palindrome {
             }
             for (int i = st.length(); i >= 0; i--) {
                 char ch = st.charAt(i);
-                str = ch + " ";
+                str +=ch;
             }
             if (st.equals(str)) {
                 System.out.println("List is Palindrome");

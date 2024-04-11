@@ -16,6 +16,11 @@ public class MergeSortedLL {
                 current.next = l1;
                 l1 = l1.next;
             }
+            else{
+                current.next=l2;
+                l2=l2.next;
+            }
+            current=current.next;
         }
         return dummy.next;
     }

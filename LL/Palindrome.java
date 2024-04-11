@@ -11,18 +11,20 @@ public class Palindrome {
     public static class drome {
         public static void rem(palin head) {
             palin temp = head;
-            String st = " ";
-            String str = " ";
+            String st = "";
+            String str = "";
             while (temp != null) {
                 int d = temp.data;
                 st+=d;
                 temp = temp.next;
             }
+            System.out.println(st);
             for (int i = st.length()-1; i >= 0; i--) {
                 char ch = st.charAt(i);
                 str +=ch;
             }
-            if (st.equals(str)) {
+            System.out.println(str);
+            if (st.equalsIgnoreCase(str)) {
                 System.out.println("List is Palindrome");
             } else {
                 System.out.println("List is not palindrome");
@@ -39,11 +41,11 @@ public class Palindrome {
         }
     }
     public static void main(String[] args) {
-        palin a=new palin(1);
-        palin b=new palin(2);
+        palin a=new palin(5);
+        palin b=new palin(4);
         palin c=new palin(3);
-        palin d=new palin(2);
-        palin e=new palin(1);
+        palin d=new palin(4);
+        palin e=new palin(5);
         a.next=b;
         b.next=c;
         c.next=d;

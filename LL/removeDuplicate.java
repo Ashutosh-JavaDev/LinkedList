@@ -11,8 +11,12 @@ public class removeDuplicate {
     public static class cate {
         public static void duplicate(removeDipli head) {
             removeDipli temp = head;
-            while(temp!=null){
-                
+            String st = "";
+            String str = "";
+            while (temp != null) {
+                int d = temp.data;
+                st += d;
+                temp = temp.next;
             }
 
         }

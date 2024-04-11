@@ -1,13 +1,20 @@
 public class removeDuplicate {
-    public static class removeDipuli {
+    public static class removeDipli {
         int data;
-        removeDipuli next;
+        removeDipli next;
 
-        removeDipuli(int data) {
+        removeDipli(int data) {
             this.data = data;
         }
     }
-    public static void duplicate(removeDipuli head){
-        
+
+    public static class cate {
+        public static void duplicate(removeDipli head) {
+            removeDipli temp = head;
+            while(temp!=null){
+                
+            }
+
+        }
     }
 }

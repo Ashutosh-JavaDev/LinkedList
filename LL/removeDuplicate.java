@@ -7,4 +7,7 @@ public class removeDuplicate {
             this.data = data;
         }
     }
+    public static void duplicate(removeDipuli head){
+        
+    }
 }

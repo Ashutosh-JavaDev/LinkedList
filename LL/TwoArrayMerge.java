@@ -1,40 +1,57 @@
 public class TwoArrayMerge {
-    int data;
-    TwoArrayMerge next;
+    public static class merging {
+        int data;
+        merging next;
 
-    TwoArrayMerge(int data) {
-        this.data = data;
+        merging(int data) {
+            this.data = data;
+        }
+
     }
 
-    public static class mergeTwoArray {
-        public static TwoArrayMerge merging(TwoArrayMerge l1, TwoArrayMerge l2) {
-            TwoArrayMerge dummy = new TwoArrayMerge(0);
-            TwoArrayMerge temp = dummy;
-            while (l1 != null && l2 != null) {
-                if (l1.data <= l2.data) {
-                    temp.next = l1;
-                    l1 = l1.next;
-                } else {
-                    temp.next = l2;
-                    l2 = l2.next;
-                }
-                temp = temp.next;
-            }
-            if (l1 != null) {
+    public static merging merg(merging l1, merging l2) {
+        merging dummy = new merging(0);
+        merging temp = dummy;
+        while (l1 != null && l2 != null) {
+            if (l1.data <= l2.data) {
+                temp.next = l1;
                 l1 = l1.next;
             } else {
+                temp.next = l2;
                 l2 = l2.next;
             }
-            return temp.next;
+            temp = temp.next;
         }
+        if (l1 != null) {
+            l1 = l1.next;
+        } else {
+            l2 = l2.next;
+        }
+        return dummy.next;
     }
 
-    public static void disp(TwoArrayMerge head) {
-        TwoArrayMerge temp = head;
+    public static void disp(merging head) {
+        merging temp = head;
         if (temp == null) {
             return;
         }
         System.out.print(temp.data + " ");
         disp(temp.next);
+    }
+
+    public static void main(String[]args){
+        merging l1=new merging(1);
+        l1.next=new merging(3);
+        l1.next.next=new merging(5);
+        disp(l1);
+        System.out.println();
+        merging l2=new merging(2);
+        l2.next=new merging(4);
+        l2.next.next=new merging(6);
+        disp(l2);
+        System.out.println();
+        merging res=merg(l1, l2);
+        disp(res);
+        System.out.println();
     }
 }

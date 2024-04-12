@@ -11,11 +11,14 @@ public class TwoArrayMerge {
             TwoArrayMerge dummy = new TwoArrayMerge(0);
             TwoArrayMerge temp = dummy;
             while (l1 != null && l2 != null) {
-                if (l1.data < l2.data) {
-                    temp.data = l1.data;
+                if (l1.data <= l2.data) {
+                    temp.next = l1;
+                    l1 = l1.next;
                 } else {
-                    temp.data = l2.data;
+                    temp.next = l2;
+                    l2 = l2.next;
                 }
+                temp = temp.next;
             }
         }
     }

@@ -7,7 +7,7 @@ public class TwoArrayMerge {
     }
 
     public static class mergeTwoArray {
-        public static void merging(TwoArrayMerge l1, TwoArrayMerge l2) {
+        public static TwoArrayMerge merging(TwoArrayMerge l1, TwoArrayMerge l2) {
             TwoArrayMerge dummy = new TwoArrayMerge(0);
             TwoArrayMerge temp = dummy;
             while (l1 != null && l2 != null) {
@@ -20,6 +20,21 @@ public class TwoArrayMerge {
                 }
                 temp = temp.next;
             }
+            if (l1 != null) {
+                l1 = l1.next;
+            } else {
+                l2 = l2.next;
+            }
+            return temp.next;
         }
+    }
+
+    public static void disp(TwoArrayMerge head) {
+        TwoArrayMerge temp = head;
+        if (temp == null) {
+            return;
+        }
+        System.out.print(temp.data + " ");
+        disp(temp.next);
     }
 }

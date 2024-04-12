@@ -8,7 +8,11 @@ public class TwoArrayMerge {
 
     public static class mergeTwoArray {
         public static void merging(TwoArrayMerge l1, TwoArrayMerge l2) {
+            TwoArrayMerge dummy = new TwoArrayMerge(0);
+            TwoArrayMerge temp = dummy;
+            while (l1 != null && l2 != null) {
 
+            }
         }
     }
 }

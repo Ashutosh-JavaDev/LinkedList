@@ -23,9 +23,9 @@ public class TwoArrayMerge {
             temp = temp.next;
         }
         if (l1 != null) {
-            l1 = l1.next;
+            temp.next = l1;
         } else {
-            l2 = l2.next;
+            temp.next = l2;
         }
         return dummy.next;
     }
@@ -39,18 +39,18 @@ public class TwoArrayMerge {
         disp(temp.next);
     }
 
-    public static void main(String[]args){
-        merging l1=new merging(1);
-        l1.next=new merging(3);
-        l1.next.next=new merging(5);
+    public static void main(String[] args) {
+        merging l1 = new merging(1);
+        l1.next = new merging(3);
+        l1.next.next = new merging(5);
         disp(l1);
         System.out.println();
-        merging l2=new merging(2);
-        l2.next=new merging(4);
-        l2.next.next=new merging(6);
+        merging l2 = new merging(2);
+        l2.next = new merging(4);
+        l2.next.next = new merging(6);
         disp(l2);
         System.out.println();
-        merging res=merg(l1, l2);
+        merging res = merg(l1, l2);
         disp(res);
         System.out.println();
     }

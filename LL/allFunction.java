@@ -23,7 +23,7 @@ public class allFunction {
             }
         }
 
-        void create(int data) {
+        void create() {
             System.out.println("Press Double Enter to stop Inserting Value");
             while (true) {
                 String str = sc.nextLine();
@@ -31,6 +31,7 @@ public class allFunction {
                     break;
                 } else {
                     try {
+                        int data=Integer.parseInt(str);
                         makeNode newNode = new makeNode(data);
                         if (head == null) {
                             newNode = head;
@@ -44,5 +45,9 @@ public class allFunction {
                 }
             }
         }
+    }
+    public static void main(String[] args) {
+        Linked ob=new Linked();
+        ob.create();
     }
 }

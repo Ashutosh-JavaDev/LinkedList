@@ -28,7 +28,19 @@ public class allFunction {
             while (true) {
                 String str = sc.nextLine();
                 if (str.equals(" ")) {
-                    return;
+                    break;
+                } else {
+                    try {
+                        makeNode newNode = new makeNode(data);
+                        if (head == null) {
+                            newNode = head;
+                        } else {
+                            newNode.next = head;
+                            head = newNode;
+                        }
+                    } catch (NumberFormatException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         }

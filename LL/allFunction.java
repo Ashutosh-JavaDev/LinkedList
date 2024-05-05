@@ -31,10 +31,10 @@ public class allFunction {
                     break;
                 } else {
                     try {
-                        int data=Integer.parseInt(str);
+                        int data = Integer.parseInt(str);
                         makeNode newNode = new makeNode(data);
                         if (head == null) {
-                            newNode = head;
+                            head = tail = newNode;
                         } else {
                             newNode.next = head;
                             head = newNode;
@@ -46,8 +46,9 @@ public class allFunction {
             }
         }
     }
+
     public static void main(String[] args) {
-        Linked ob=new Linked();
+        Linked ob = new Linked();
         ob.create();
         ob.disp();
     }

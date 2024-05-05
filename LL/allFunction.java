@@ -49,5 +49,6 @@ public class allFunction {
     public static void main(String[] args) {
         Linked ob=new Linked();
         ob.create();
+        ob.disp();
     }
 }

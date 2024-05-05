@@ -17,7 +17,7 @@ public class allFunction {
 
         void disp() {
             makeNode temp = head;
-            while (temp.next != null) {
+            while (temp != null) {
                 System.out.println(temp.data);
                 temp = temp.next;
             }
@@ -36,8 +36,8 @@ public class allFunction {
                         if (head == null) {
                             head = tail = newNode;
                         } else {
-                            newNode.next = head;
-                            head = newNode;
+                            tail.next = newNode;
+                            tail = newNode;
                         }
                     } catch (NumberFormatException e) {
                         e.printStackTrace();

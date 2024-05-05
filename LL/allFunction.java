@@ -24,10 +24,10 @@ public class allFunction {
         }
 
         void create() {
-            System.out.println("Press Double Enter to stop Inserting Value");
+            System.out.println("Enter Stop to stop Inserting Value");
             while (true) {
                 String str = sc.nextLine();
-                if (str.equals(" ")) {
+                if (str.equalsIgnoreCase("stop")) {
                     break;
                 } else {
                     try {

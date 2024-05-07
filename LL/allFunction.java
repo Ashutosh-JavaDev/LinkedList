@@ -125,24 +125,26 @@ public class allFunction {
                 System.out.println("Enter the Index Position");
                 int pos = sc.nextInt();
                 while (true) {
-                    if (pos > size()) {
+                    if (pos >= size()) {
                         System.out.println("Choose Correct Index");
-                        pos=sc.nextInt();
+                        pos = sc.nextInt(); // Update pos inside the loop
                     } else {
                         if (pos == 0) {
                             head = head.next;
-                            return;
+                        } else {
+                            makeNode temp = head;
+                            for (int i = 0; i < pos - 1; i++) {
+                                temp = temp.next;
+                            }
+                            temp.next = temp.next.next;
                         }
-                        makeNode temp = head;
-                        for (int i = 0; i < pos - 1; i++) {
-                            temp = temp.next;
-                        }
-                        temp.next = temp.next.next;
+                        break; // Break the loop after performing the deletion
                     }
                 }
             } catch (IndexOutOfBoundsException e) {
                 e.printStackTrace();
             }
+            
         }
     }
 

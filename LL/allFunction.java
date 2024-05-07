@@ -105,17 +105,43 @@ public class allFunction {
             }
         }
 
-        static void delAtMid(int pos) {
+        static int size() {
+            int count = 0;
+            makeNode temp = head;
+            while (temp != null) {
+                temp = temp.next;
+                count++;
+            }
+            return count;
+        }
+
+        static void delAtMid() {
             if (head == null) {
                 System.out.println("-------------------------");
                 System.out.println("List is Empty");
                 return;
-            } else {
-                makeNode temp = head;
-                for (int i = 0; i < pos - 1; i++) {
-                    temp = temp.next;
+            }
+            try {
+                System.out.println("Enter the Index Position");
+                int pos = sc.nextInt();
+                while (true) {
+                    if (pos > size()) {
+                        System.out.println("Choose Correct Index");
+                        pos=sc.nextInt();
+                    } else {
+                        if (pos == 0) {
+                            head = head.next;
+                            return;
+                        }
+                        makeNode temp = head;
+                        for (int i = 0; i < pos - 1; i++) {
+                            temp = temp.next;
+                        }
+                        temp.next = temp.next.next;
+                    }
                 }
-                temp.next=temp.next.next;
+            } catch (IndexOutOfBoundsException e) {
+                e.printStackTrace();
             }
         }
     }
@@ -125,7 +151,10 @@ public class allFunction {
         ob.create();
         // ob.addAtBeg(0);
         // ob.addatMid(0, 15);
-        ob.delAtMid(3);
+        Scanner sc = new Scanner(System.in);
+        // System.out.println("Enter the Index");
+
+        ob.delAtMid();
         // ob.addAtEnd(6);
         ob.disp();
     }

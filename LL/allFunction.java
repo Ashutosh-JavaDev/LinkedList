@@ -69,13 +69,16 @@ public class allFunction {
             }
         }
 
-        static void addatMid(int data) {
+        static void addatMid(int pos,int data) {
             if (head == null) {
                 System.out.println("First Insert someting in the List");
                 create();
-                System.out.println("Insert value in the Middle");
-                addatMid(sc.nextInt());
+                System.out.println("Insert Posiition and value in the List");
+                addatMid(sc.nextInt(),sc.nextInt());
                 return;
+            }
+            else{
+
             }
         }
     }

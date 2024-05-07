@@ -48,9 +48,9 @@ public class allFunction {
 
         static void addAtBeg(int data) {
             makeNode newNode = new makeNode(data);
-            // makeNode temp = head;
+
             if (head == null) {
-                newNode = head = tail;
+                head = tail = newNode;
                 return;
             } else {
                 newNode.next = head;
@@ -61,8 +61,8 @@ public class allFunction {
 
     public static void main(String[] args) {
         Linked ob = new Linked();
-        ob.create();
-        ob.addAtBeg(0);
+        // ob.create();
+        ob.addAtBeg(1);
         ob.disp();
     }
 }

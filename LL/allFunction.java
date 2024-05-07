@@ -101,7 +101,21 @@ public class allFunction {
                 System.out.println("List is Empty");
                 return;
             } else {
-                head.next = head;
+                head = head.next;
+            }
+        }
+
+        static void delAtMid(int pos) {
+            if (head == null) {
+                System.out.println("-------------------------");
+                System.out.println("List is Empty");
+                return;
+            } else {
+                makeNode temp = head;
+                for (int i = 0; i < pos - 1; i++) {
+                    temp = temp.next;
+
+                }
             }
         }
     }

@@ -48,13 +48,14 @@ public class allFunction {
 
         static void addAtBeg(int data) {
             makeNode newNode = new makeNode(data);
-            makeNode temp = head;
+            // makeNode temp = head;
             if (head == null) {
                 newNode = head = tail;
                 return;
+            } else {
+                newNode.next = head;
+                head = newNode;
             }
-            temp = newNode.next;
-            newNode = temp;
         }
     }
 

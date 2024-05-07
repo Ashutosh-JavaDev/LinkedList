@@ -11,11 +11,11 @@ public class allFunction {
     }
 
     public static class Linked {
-        makeNode head = null;
-        makeNode tail = null;
-        Scanner sc = new Scanner(System.in);
+        static makeNode head = null;
+        static makeNode tail = null;
+        static Scanner sc = new Scanner(System.in);
 
-        void disp() {
+        static void disp() {
             makeNode temp = head;
             while (temp != null) {
                 System.out.println(temp.data);
@@ -23,7 +23,7 @@ public class allFunction {
             }
         }
 
-        void create() {
+        static void create() {
             System.out.println("Enter Stop to stop Inserting Value");
             while (true) {
                 String str = sc.nextLine();
@@ -45,6 +45,7 @@ public class allFunction {
                 }
             }
         }
+
     }
 
     public static void main(String[] args) {

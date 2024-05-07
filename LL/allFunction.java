@@ -73,10 +73,13 @@ public class allFunction {
             makeNode newNode = new makeNode(data);
             makeNode temp = head;
             if (head == null) {
+                System.out.println("----------------------------------------------------");
                 System.out.println("First Insert someting in the List");
+                System.out.println("-------------------------------------------------");
                 create();
                 System.out.println("Insert Posiition and value in the List");
                 addatMid(sc.nextInt(), sc.nextInt());
+                System.out.println("---------------------------------------------------");
                 return;
             } else {
                 if (pos == 0) {

@@ -46,15 +46,15 @@ public class allFunction {
             }
         }
 
-        void addAtBeg(int data) {
+        static void addAtBeg(int data) {
             makeNode newNode = new makeNode(data);
             makeNode temp = head;
             if (head == null) {
                 newNode = head = tail;
                 return;
             }
-            newNode.next = temp;
-            temp = newNode;
+            temp = newNode.next;
+            newNode = temp;
         }
     }
 

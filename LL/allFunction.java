@@ -121,9 +121,10 @@ public class allFunction {
                 System.out.println("List is Empty");
                 return;
             }
+            System.out.println("Enter the Index Position");
+            int pos = sc.nextInt();
             try {
-                System.out.println("Enter the Index Position");
-                int pos = sc.nextInt();
+
                 while (true) {
                     if (pos >= size()) {
                         System.out.println("Choose Correct Index");
@@ -143,8 +144,19 @@ public class allFunction {
                 }
             } catch (IndexOutOfBoundsException e) {
                 e.printStackTrace();
+
             }
-            
+
+        }
+
+        static void delAtEnd() {
+            if (head == null) {
+                return;
+            }
+            makeNode temp = head;
+            while (temp.next != null) {
+
+            }
         }
     }
 

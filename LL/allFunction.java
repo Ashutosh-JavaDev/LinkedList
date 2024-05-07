@@ -64,6 +64,10 @@ public class allFunction {
                 head = tail = newNode;
                 return;
             }
+            else{
+                tail.next=newNode;
+                newNode=tail;
+            }
         }
     }
 

@@ -79,6 +79,11 @@ public class allFunction {
                 addatMid(sc.nextInt(), sc.nextInt());
                 return;
             } else {
+                if(pos==0){
+                    newNode.next=temp;
+                    temp=newNode;
+                    return;
+                }
                 for (int i = 0; i < pos - 1; i++) {
                     temp = temp.next;
                 }
@@ -91,9 +96,9 @@ public class allFunction {
     public static void main(String[] args) {
         Linked ob = new Linked();
         ob.create();
-        ob.addAtBeg(0);
-        ob.addatMid(3, 15);
-        ob.addAtEnd(6);
+        // ob.addAtBeg(0);
+        ob.addatMid(0, 15);
+        // ob.addAtEnd(6);
         ob.disp();
     }
 }

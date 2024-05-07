@@ -79,9 +79,9 @@ public class allFunction {
                 addatMid(sc.nextInt(), sc.nextInt());
                 return;
             } else {
-                if(pos==0){
-                    newNode.next=temp;
-                    temp=newNode;
+                if (pos == 0) {
+                    newNode.next = head;
+                    head = newNode;
                     return;
                 }
                 for (int i = 0; i < pos - 1; i++) {

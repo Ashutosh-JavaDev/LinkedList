@@ -158,6 +158,7 @@ public class allFunction {
                 temp=temp.next;
             }
             temp.next=temp.next.next;
+            tail=temp;
         }
     }
 

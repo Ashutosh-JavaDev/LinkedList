@@ -155,8 +155,9 @@ public class allFunction {
             }
             makeNode temp = head;
             while (temp.next != null) {
-
+                temp=temp.next;
             }
+            temp.next=temp.next.next;
         }
     }
 

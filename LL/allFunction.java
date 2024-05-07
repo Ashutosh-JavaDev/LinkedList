@@ -48,17 +48,20 @@ public class allFunction {
 
         void addAtBeg(int data) {
             makeNode newNode = new makeNode(data);
-            // makeNode temp=head;
+            makeNode temp = head;
             if (head == null) {
                 newNode = head = tail;
                 return;
             }
+            newNode.next = temp;
+            temp = newNode;
         }
     }
 
     public static void main(String[] args) {
         Linked ob = new Linked();
         ob.create();
+        ob.addAtBeg(0);
         ob.disp();
     }
 }

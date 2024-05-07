@@ -94,6 +94,17 @@ public class allFunction {
                 temp.next = newNode;
             }
         }
+        static void delAtBeg(){
+            if(head==null){
+                System.out.println("-------------------------");
+                System.out.println("List is Empty");
+                return;
+            }
+            else{
+                head.next=head;
+                
+            }
+        }
     }
 
     public static void main(String[] args) {

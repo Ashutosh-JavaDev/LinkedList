@@ -57,6 +57,12 @@ public class allFunction {
                 head = newNode;
             }
         }
+        static void addAtEnd(int data){
+            makeNode newNode=new makeNode(data);
+            if(head==null){
+                head=tail=newNode;
+            }
+        }
     }
 
     public static void main(String[] args) {

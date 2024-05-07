@@ -125,7 +125,7 @@ public class allFunction {
         ob.create();
         // ob.addAtBeg(0);
         // ob.addatMid(0, 15);
-        ob.delAtBeg();
+        ob.delAtMid(3);
         // ob.addAtEnd(6);
         ob.disp();
     }

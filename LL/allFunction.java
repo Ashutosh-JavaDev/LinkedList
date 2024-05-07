@@ -94,24 +94,24 @@ public class allFunction {
                 temp.next = newNode;
             }
         }
-        static void delAtBeg(){
-            if(head==null){
+
+        static void delAtBeg() {
+            if (head == null) {
                 System.out.println("-------------------------");
                 System.out.println("List is Empty");
                 return;
-            }
-            else{
-                head.next=head;
-                
+            } else {
+                head.next = head;
             }
         }
     }
 
     public static void main(String[] args) {
         Linked ob = new Linked();
-        // ob.create();
+        ob.create();
         // ob.addAtBeg(0);
-        ob.addatMid(0, 15);
+        // ob.addatMid(0, 15);
+        ob.delAtBeg();
         // ob.addAtEnd(6);
         ob.disp();
     }

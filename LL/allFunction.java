@@ -74,7 +74,8 @@ public class allFunction {
     public static void main(String[] args) {
         Linked ob = new Linked();
         ob.create();
-        ob.addAtBeg(1);
+        ob.addAtBeg(0);
+        ob.addAtEnd(6);
         ob.disp();
     }
 }

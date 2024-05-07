@@ -170,8 +170,9 @@ public class allFunction {
         Scanner sc = new Scanner(System.in);
         // System.out.println("Enter the Index");
 
-        ob.delAtMid();
+        // ob.delAtMid();
         // ob.addAtEnd(6);
+        ob.delAtEnd();
         ob.disp();
     }
 }

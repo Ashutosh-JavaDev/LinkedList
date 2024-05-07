@@ -63,10 +63,19 @@ public class allFunction {
             if (head == null) {
                 head = tail = newNode;
                 return;
+            } else {
+                tail.next = newNode;
+                newNode = tail;
             }
-            else{
-                tail.next=newNode;
-                newNode=tail;
+        }
+
+        static void addatMid(int data) {
+            if (head == null) {
+                System.out.println("First Insert someting in the List");
+                create();
+                System.out.println("Insert value in the Middle");
+                addatMid(sc.nextInt());
+                return;
             }
         }
     }

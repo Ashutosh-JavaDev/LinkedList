@@ -71,6 +71,7 @@ public class allFunction {
 
         static void addatMid(int pos, int data) {
             makeNode newNode = new makeNode(data);
+            makeNode temp = head;
             if (head == null) {
                 System.out.println("First Insert someting in the List");
                 create();
@@ -78,7 +79,9 @@ public class allFunction {
                 addatMid(sc.nextInt(), sc.nextInt());
                 return;
             } else {
-
+                for (int i = 0; i < pos - 1; i++) {
+                    temp = temp.next;
+                }
             }
         }
     }

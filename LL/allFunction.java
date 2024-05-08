@@ -197,6 +197,7 @@ public class allFunction {
                     break;
                 case 6:
                     delAtBeg();
+                    disp();
                     break;
                 case 7:
                     delAtMid();

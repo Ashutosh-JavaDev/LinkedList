@@ -172,6 +172,8 @@ public class allFunction {
                 case 2:
                     disp();
                     break;
+                    case 3:
+                    
 
             }
             return choose;

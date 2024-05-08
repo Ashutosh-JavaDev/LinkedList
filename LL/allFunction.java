@@ -178,12 +178,14 @@ public class allFunction {
             switch (choose) {
                 case 1:
                     create();
+                    disp();
                     break;
                 case 2:
                     disp();
                     break;
                 case 3:
                     addAtBeg();
+                    disp();
                     break;
                 case 4:
                     addatMid();

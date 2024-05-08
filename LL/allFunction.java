@@ -182,7 +182,8 @@ public class allFunction {
                     disp();
                     break;
                     case 3:
-                    addAtBeg(choose);
+                    addAtBeg();
+                    break;
 
             }
             return choose;

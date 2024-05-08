@@ -209,6 +209,6 @@ public class allFunction {
 
     public static void main(String[] args) {
         Linked ob = new Linked();
-      ob.press();
+        ob.press();
     }
 }

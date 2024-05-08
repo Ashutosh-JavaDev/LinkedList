@@ -48,7 +48,7 @@ public class allFunction {
 
         static void addAtBeg() {
             System.out.println("What Value you want to Insert");
-            int data=sc.nextInt();
+            int data = sc.nextInt();
             makeNode newNode = new makeNode(data);
 
             if (head == null) {
@@ -62,7 +62,7 @@ public class allFunction {
 
         static void addAtEnd() {
             System.out.println("What Value you want to Insert");
-            int data=sc.nextInt();
+            int data = sc.nextInt();
             makeNode newNode = new makeNode(data);
             if (head == null) {
                 head = tail = newNode;
@@ -76,9 +76,9 @@ public class allFunction {
         static void addatMid() {
 
             System.out.println("What Value you want to Insert");
-            int data=sc.nextInt();
+            int data = sc.nextInt();
             System.out.println("At which Position you want to Insert the Data ?");
-            int pos=sc.nextInt();
+            int pos = sc.nextInt();
             makeNode newNode = new makeNode(data);
             makeNode temp = head;
             if (head == null) {
@@ -181,15 +181,21 @@ public class allFunction {
                 case 2:
                     disp();
                     break;
-                    case 3:
+                case 3:
                     addAtBeg();
                     break;
                 case 4:
-                addatMid();
-                break;
+                    addatMid();
+                    break;
                 case 5:
-                addAtEnd();
-                break;
+                    addAtEnd();
+                    break;
+                    case 6:
+                    delAtBeg();
+                    break;
+                    case 7:
+                    delAtMid();
+                    break; 
             }
             return choose;
         }

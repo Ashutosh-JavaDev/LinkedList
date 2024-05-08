@@ -184,7 +184,12 @@ public class allFunction {
                     case 3:
                     addAtBeg();
                     break;
-
+                case 4:
+                addatMid();
+                break;
+                case 5:
+                addAtEnd();
+                break;
             }
             return choose;
         }

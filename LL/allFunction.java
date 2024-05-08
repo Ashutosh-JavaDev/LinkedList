@@ -190,12 +190,15 @@ public class allFunction {
                 case 5:
                     addAtEnd();
                     break;
-                    case 6:
+                case 6:
                     delAtBeg();
                     break;
-                    case 7:
+                case 7:
                     delAtMid();
-                    break; 
+                    break;
+                case 8:
+                    delAtEnd();
+                    break;
             }
             return choose;
         }

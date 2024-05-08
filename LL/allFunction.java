@@ -204,6 +204,7 @@ public class allFunction {
                     break;
                 case 8:
                     delAtEnd();
+                    disp();
                     break;
                 default:
                     System.out.println("Invalid Case!!");

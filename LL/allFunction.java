@@ -199,6 +199,9 @@ public class allFunction {
                 case 8:
                     delAtEnd();
                     break;
+                default:
+                    System.out.println("Invalid Case!!");
+                    break;
             }
             return choose;
         }

@@ -60,7 +60,9 @@ public class allFunction {
             }
         }
 
-        static void addAtEnd(int data) {
+        static void addAtEnd() {
+            System.out.println("What Value you want to Insert");
+            int data=sc.nextInt();
             makeNode newNode = new makeNode(data);
             if (head == null) {
                 head = tail = newNode;

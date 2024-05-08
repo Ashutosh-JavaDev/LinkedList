@@ -193,6 +193,7 @@ public class allFunction {
                     break;
                 case 5:
                     addAtEnd();
+                    disp();
                     break;
                 case 6:
                     delAtBeg();

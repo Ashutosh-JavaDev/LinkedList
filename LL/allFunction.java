@@ -170,7 +170,7 @@ public class allFunction {
             tail = temp;
         }
 
-        public static int press(int press) {
+        public static int press() {
             System.out.println(
                     "Press 1: To Create List\nPress 2: Top Display List\nPress 3: To Insert value in the beginning\nPress 4: To Insert value in the Middle of the List\nPress 5: To Insert the Value in the Last of the List\nPress 6: To Delete the value from the Beginning\nPress 7: To Delete the value from the any Position of the List\nPress 8: To Delete the Value form the Last of the List");
             int choose = sc.nextInt();
@@ -209,15 +209,6 @@ public class allFunction {
 
     public static void main(String[] args) {
         Linked ob = new Linked();
-        ob.create();
-        // ob.addAtBeg(0);
-        // ob.addatMid(0, 15);
-        Scanner sc = new Scanner(System.in);
-        // System.out.println("Enter the Index");
-
-        // ob.delAtMid();
-        // ob.addAtEnd(6);
-        ob.delAtEnd();
-        ob.disp();
+      ob.press();
     }
 }

@@ -189,6 +189,7 @@ public class allFunction {
                     break;
                 case 4:
                     addatMid();
+                    disp();
                     break;
                 case 5:
                     addAtEnd();

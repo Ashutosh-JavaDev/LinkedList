@@ -175,42 +175,44 @@ public class allFunction {
                     "Press 1: To Create List\nPress 2: Top Display List\nPress 3: To Insert value in the beginning\nPress 4: To Insert value in the Middle of the List\nPress 5: To Insert the Value in the Last of the List\nPress 6: To Delete the value from the Beginning\nPress 7: To Delete the value from the any Position of the List\nPress 8: To Delete the Value form the Last of the List");
             int choose = sc.nextInt();
             sc.nextLine();
-            switch (choose) {
-                case 1:
-                    create();
-                    disp();
-                    break;
-                case 2:
-                    disp();
-                    break;
-                case 3:
-                    addAtBeg();
-                    disp();
-                    break;
-                case 4:
-                    addatMid();
-                    disp();
-                    break;
-                case 5:
-                    addAtEnd();
-                    disp();
-                    break;
-                case 6:
-                    delAtBeg();
-                    disp();
-                    break;
-                case 7:
-                    delAtMid();
-                    break;
-                case 8:
-                    delAtEnd();
-                    disp();
-                    break;
-                default:
-                    System.out.println("Invalid Case!!");
-                    break;
+            while (true) {
+                switch (choose) {
+                    case 1:
+                        create();
+                        disp();
+                        break;
+                    case 2:
+                        disp();
+                        break;
+                    case 3:
+                        addAtBeg();
+                        disp();
+                        break;
+                    case 4:
+                        addatMid();
+                        disp();
+                        break;
+                    case 5:
+                        addAtEnd();
+                        disp();
+                        break;
+                    case 6:
+                        delAtBeg();
+                        disp();
+                        break;
+                    case 7:
+                        delAtMid();
+                        break;
+                    case 8:
+                        delAtEnd();
+                        disp();
+                        break;
+                    default:
+                        System.out.println("Invalid Case!!");
+                        break;
+
+                }
             }
-            return choose;
         }
     }
 

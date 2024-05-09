@@ -182,9 +182,9 @@ public class allFunction {
                     break;
                 } else {
                     int state = Integer.parseInt(choose);
+                    System.out.println(("--------------------------------------------------------"));
                     switch (state) {
                         case 1:
-                        System.out.println("Insert Value");
                             create();
                             disp();
                             break;

@@ -178,41 +178,46 @@ public class allFunction {
                 System.out.println("Press Stop To stop Switching");
                 String choose = sc.nextLine();
                 // sc.nextLine();
-                switch (choose) {
-                    case 1:
-                        create();
-                        disp();
-                        break;
-                    case 2:
-                        disp();
-                        break;
-                    case 3:
-                        addAtBeg();
-                        disp();
-                        break;
-                    case 4:
-                        addatMid();
-                        disp();
-                        break;
-                    case 5:
-                        addAtEnd();
-                        disp();
-                        break;
-                    case 6:
-                        delAtBeg();
-                        disp();
-                        break;
-                    case 7:
-                        delAtMid();
-                        break;
-                    case 8:
-                        delAtEnd();
-                        disp();
-                        break;
-                    default:
-                        System.out.println("Invalid Case!!");
-                        break;
+                if (choose.equalsIgnoreCase("Stop")) {
+                    break;
+                } else {
+                    int state = Integer.parseInt(choose);
+                    switch (choose) {
+                        case 1:
+                            create();
+                            disp();
+                            break;
+                        case 2:
+                            disp();
+                            break;
+                        case 3:
+                            addAtBeg();
+                            disp();
+                            break;
+                        case 4:
+                            addatMid();
+                            disp();
+                            break;
+                        case 5:
+                            addAtEnd();
+                            disp();
+                            break;
+                        case 6:
+                            delAtBeg();
+                            disp();
+                            break;
+                        case 7:
+                            delAtMid();
+                            break;
+                        case 8:
+                            delAtEnd();
+                            disp();
+                            break;
+                        default:
+                            System.out.println("Invalid Case!!");
+                            break;
 
+                    }
                 }
             }
         }

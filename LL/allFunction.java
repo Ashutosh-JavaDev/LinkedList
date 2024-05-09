@@ -193,25 +193,32 @@ public class allFunction {
                             break;
                         case 3:
                             addAtBeg();
+                            sc.nextLine();
                             disp();
                             break;
                         case 4:
                             addatMid();
+                            sc.nextLine();
                             disp();
                             break;
                         case 5:
                             addAtEnd();
+                            sc.nextLine();
                             disp();
                             break;
                         case 6:
                             delAtBeg();
+                            sc.nextLine();
                             disp();
                             break;
                         case 7:
                             delAtMid();
+                            sc.nextLine();
+                            disp();
                             break;
                         case 8:
                             delAtEnd();
+                            sc.nextLine();
                             disp();
                             break;
                         default:

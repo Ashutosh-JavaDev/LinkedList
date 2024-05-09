@@ -206,7 +206,7 @@ public class allFunction {
                             break;
                         case 6:
                             delAtBeg();
-                            sc.nextLine();
+                            // sc.nextLine();
                             disp();
                             break;
                         case 7:

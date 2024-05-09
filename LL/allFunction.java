@@ -216,7 +216,7 @@ public class allFunction {
                             break;
                         case 8:
                             delAtEnd();
-                            sc.nextLine();
+                            // sc.nextLine();
                             disp();
                             break;
                         default:

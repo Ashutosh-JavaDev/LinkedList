@@ -185,6 +185,7 @@ public class allFunction {
                     sc.nextLine();
                     switch (state) {
                         case 1:
+                        System.out.println("Insert Value");
                             create();
                             disp();
                             break;

@@ -170,7 +170,7 @@ public class allFunction {
             tail = temp;
         }
 
-        public static int press() {
+        public static void press() {
             System.out.println(
                     "Press 1: To Create List\nPress 2: Top Display List\nPress 3: To Insert value in the beginning\nPress 4: To Insert value in the Middle of the List\nPress 5: To Insert the Value in the Last of the List\nPress 6: To Delete the value from the Beginning\nPress 7: To Delete the value from the any Position of the List\nPress 8: To Delete the Value form the Last of the List");
 
@@ -182,7 +182,7 @@ public class allFunction {
                     break;
                 } else {
                     int state = Integer.parseInt(choose);
-                    switch (choose) {
+                    switch (state) {
                         case 1:
                             create();
                             disp();
